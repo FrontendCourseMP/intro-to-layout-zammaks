@@ -71,15 +71,111 @@ header {
 
 }
 
-h1 {
-    color: #ECEEF8;
-    font-size: 5rem;
-    font-family: inter,sans-serif;
-    font-weight: 700;
-    line-height: 1.1;
-    text-transform: uppercase;
+h2 {
+  color: #ECEEF8;
+  font-size: 5rem;
+  font-family: inter, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.1;
 }
 
-body{
+
+
+h3 {
+  color: #ECEEF8;
+  font-size: 4rem;
+  font-family: inter,sans-serif;
+  font-weight: 700;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+
+body {
     background: var(--first_color);
+    color: white;
+    font-size: 1.2rem;
+    font-family: "inter", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 1.4;
+
+}
+
+button {
+  background-color:#F49C89;
+  border: 0.75rem solid #F49C89;
+  border-radius:2rem;
+  color: white;
+}
+
+.link{
+  text-decoration: none;
+  color:white;
+}
+
+.window{
+  background-color: #ECEEF8;
+  border: 0.5rem;
+  border-radius:2rem;
+
+  
+}
+.basictxt {
+    color: #34344E;
+    font-size: 1.2rem;
+    font-family: "inter", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 1.4;
+    text-align: left;
+    padding: 1rem;
+}
+
+.hwin{
+    color: #34344E;
+    font-size: 3rem;
+    font-family: "inter", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 1.1;
+    padding: 1rem;
+}
+
+.hrwin{
+  color:#F49C89;
+  padding: 1rem;
+}
+
+.money{
+  color: #34344E;
+  padding:1rem;
+  text-align: left;
+}
+
+img{
+  left:1rem;
+}
+
+.ps {
+  color: rgba(52, 52, 78, 0.50);
+}
+
+.orange{
+  background-color: #F49C89;
+}
+
+nope{
+  color:#34344E;
+}
+
+.bl{
+  background-color: #34344E;
+  border:2rem;
+  border-radius:2rem;
+}
+
+.foot{
+  color: rgba(255, 255, 255, 0.40);
 }
