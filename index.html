@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,243 +8,548 @@
     <link rel="stylesheet" href="css\normalize.css">
     <title>Document</title>
 </head>
-<!-- Так, посмотрел работу, нужно половину переделать, сделано как-то прямо очень с забиванием на семантику,
-    Почему не задавал вопросы при выполнении? Я бы помог и подсказал более подробно. Пока что это - просто набор чего-то
-    непонятного без структуры, что плохо, но поправим. -->
+
 <body>
-    <header>
-        <img src=" " alt=" ">
-        TOCHKA
-        <img src=" " alt=" ">
-        + 7 909 151-08-70
-        <img src=" " alt=" ">
+    <header class="header">
+        <a href="" class="header__logo logo">
+            <img src=" " alt=" " class="logo__img">
+        </a>
+        <a href="" class="header__phone phone">
+            <img src="" alt="" class="phone__img">
+            <span class="phone__text">
+                +7 909 151-08-70
+            </span>
+        </a>
+        <button class="header__burger burger">
+            <span class="visually-hidden">
+                open menu
+            </span>
+            <img src="" alt="" class="burger__img">
+        </button>
     </header>
     <main>
-        <section>
-            <h2>
-                студия для онлайн-трансляций, <img src=" " alt=" "><img src=" " alt=" ">видеосъемки и записи подкастов
-            </h2>
-            съемочное пространство, оборудованиеи обслуживание от 3900р/час
-            <!-- должно быть в теге параграфа -->
-            <p>
-                <!-- не требуется -->
-                <button>
-                    <a  class="link" href=" " >получить бесплатный тест-драйв</a>
-                </button>
-                <!-- ссылка, ибо подразумевает переход на оформление -->
-            </p>
-            <h3>
-                в нашей студии есть несколько зон с разным интерфейсом
-            </h3>
-            <!-- не заголовок -->
+        <section class="hero">
+            <div class="hero__wrapper">
+                <h1 class="hero__title">
+                    студия для онлайн-трансляций,
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    видеосъемки и записи подкастов
+                </h1>
+                <p class="hero__text">
+                    съемочное пространство, оборудование и обслуживание от 3 900 ₽/час
+                </p>
+                <a href="" class="hero__link link">
+                    <span class="link__text">
+                        получить бесплатный тест-драйв
+                    </span>
+                </a>
+            </div>
         </section>
-        <section class="window">
-            <img src=" " alt=" ">
-            <h4 class="hwin">кастом</h4>
-            <!-- не правильный заголвоок -->
-            <p class="basictxt">Большая студия с несколькими вариантами по сет-дизайну. Идеально подойдет для записи интервью, прямой трансляции и подкаста.</p>
-            <button>стоимость</button>
-            <!-- почему тут кнопка? -->
-            <p class="money">от 4 000 р/час <a href=" " class="hrwin">подробнее о студии</a></p>
-            <!-- Зачем собрал вообще все в параграф? -->
-        </section>   
-        <section class="window">
-            <img src=" " alt=" ">
-            <h4 class="hwin">подкаст</h4>
-            <!-- неправильный уровень заголовка -->
-            <p class="basictxt">Студия с уютным лофт-дизайном, в которой есть все необходимое для записи подкаста и его видеоверсии</p>
-            <p><button>стоимость</button></p>
-            <!-- Кнопке не требуется параграф, также тут не требуется кнопка -->
-            <p class="money">от 4 000 р/час <a href=" " class="hrwin">подробнее о студии</a></p>
-            <!-- не надо их вместе брать в параграф -->
-        </section> 
-        <section class="window">
-            <img src=" " alt=" ">
-            <h4 class="hwin">вебинар</h4>
-            <!-- неправильный уровень заголовка -->
-            <p class="basictxt">Небольшая студия с акцентом на проведение вебинаров и запись видеоуроков, с системой разноцветных фонов, прозрачной доской и теле-суфлером</p>
-            <p><button>стоимость</button></p>
-            <!-- не нужен параграф и тут явно не кнопка -->
-            <p class="money">от 4 000 р/час <a href=" " class="hrwin">подробнее о студии</a></p>
-            <!-- не нужно оба брать в один параграф -->
-        </section>
-        <section class="window">
-            <img src=" " alt=" ">
-            <h4 class="hwin">тут будет еще четвертая зона</h4>
-            <!-- неправильный уровень заголовка -->
-            <p class="basictxt">тут будет текст</p>
-            <p><button>стоимость</button></p>
-            <!-- не кнопка, не параграф -->
-            <p class="money">от 4 000 р/час <a href=" " class="hrwin">подробнее о студии</a></p>
-            <!-- оба не берем в общий параграф -->
-        </section>
-        <!-- вот это вот в отдельную секцию, ибо у тебя это уже новая логическая тема -->
-        <h3>продумали все до мелочей, чтобы осовободить вашу голову от забот</h3>
-        <!-- неправильный уровень заголовка -->
-        <section class="window">
-            <img src=" " alt=" ">
-            <h4  class="hwin">зона отдыха</h4>
-            <!-- неправильный уровень заголовка -->
-            <p class="basictxt">Большая комната ожидания с водой, чаем и кофе в дрип-пакетах</p>
-        </section>
-        <section class="window">
-            <img src=" " alt=" ">
-            <h4  class="hwin">зона playback</h4>
-            <!-- неправильный уровень заголовка -->
-            <p class="basictxt">Установлена плазма 55’, чтобы смотреть трансляцию из студии в режиме реального времени</p>
-        </section>
-        <!-- не секции, а список -->
-        <h3>узнайте предварительную стоимость</h3>
-        Работа команды, использование общей зоны, грим-пост и парковочные места включены в стоимость. Стоимость студии без сопровождения (команды) обсуждается индивидуально.
-        <!-- почему текст без тега? -->
-        <section>
-            <img src=" " alt=" ">
+        <section class="about-studio">
+            <div class="about-studio__wrapper">
+                <h2 class="about-studio__title">
+                    в нашей студии есть несколько зон с разным интерьером
+                    <ul class="about-studio__list">
+                        <li class="about-studio__studio-card studio-card">
+                            <img src="" alt="" class="studio-card__img">
+                            <h3 class="studio-card__title">
+                                кастом
+                            </h3>
+                            <p class="studio-card__text">
+                                Большая студия с несколькими вариантами по сет-дизайну. Идеально подойдет для записи
+                                интервью, прямой трансляции и подкаста.
+                                <span class="studio-card__price">
+                                    стоимость
+                                </span>
+                                от 4 000 ₽/час
+                            </p>
+                            <a href="" class="studio-card__link link">
+                                <span class="link__text">
+                                    подробнее о студии
+                                </span>
+                            </a>
+                        </li>
+                        <li class="about-studio__studio-card studio-card">
+                            <img src="" alt="" class="studio-card__img">
+                            <h3 class="studio-card__title">
+                                подкаст
+                            </h3>
+                            <p class="studio-card__text">
+                                студия с уютным лофт-дизайном, в которой есть все необходимое для записи подкаста и его
+                                видеоверсии
+                                <span class="studio-card__price">
+                                    стоимость
 
-        </section>
-        <!-- А это что вообще за секция? -->
-        <section class="window" >
-            <!-- вот это вот все одна форма с fieldset'ами -->
-            <div class="basictxt">
-                <p>выберите студию</p>
-                <p><input type="radio" name="1 " id="1  " checked> кастом  <input type="radio" name=" " id="  "> подкаст</p>
-                <p><input type="radio" name=" 1" id="  1" > вебинар <input type="radio" name=" " id="  "> 4 студия</p>
+                                </span>
+                                от 4 000 ₽/час
+                            </p>
+                            <a href="" class="studio-card__link link">
+                                <span class="link__text">
+                                    подробнее о студии
+                                </span>
+                            </a>
+                        </li>
+                        <li class="about-studio__studio-card studio-card">
+                            <img src="" alt="" class="studio-card__img">
+                            <h3 class="studio-card__title">
+                                вебинар
+                            </h3>
+                            <p class="studio-card__text">
+                                небольшая студия с акцентом на проведение вебинаров и запись видеоуроков, с системой
+                                разноцветных фонов, прозрачной доской и теле-суфлером
+                                <span class="studio-card__price">
+                                    стоимость
+                                </span>
+                                от 4 000 ₽/час
+                            </p>
+                            <a href="" class="studio-card__link link">
+                                <span class="link__text">
+                                    подробнее о студии
+                                </span>
+                            </a>
+                        </li>
+                        <li class="about-studio__studio-card studio-card">
+                            <img src="" alt="" class="studio-card__img">
+                            <h3 class="studio-card__title">
+                                тут будет еще четвертая зона
+                            </h3>
+                            <p class="studio-card__text">
+                                тут будет текст
+                                <span class="studio-card__price">
+                                    стоимость
+                                </span>
+                                от 4 000 ₽/час
+                            </p>
+                            <a href="" class="studio-card__link link">
+                                <span class="link__text">
+                                    подробнее о студии
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </h2>
             </div>
-            <div class="basictxt">
-                <p>продолжительность</p>
-                <p><input type="radio" name=" " id="  " > 1-2 часа <input type="radio" name=" " id="  "> 3 часа</p>
-                <p><input type="radio" name=" 2" id=" 2 " checked> 4 часа <input type="radio" name=" " id="  "> 5 и  более </p>
+        </section>
+        <section class="studio-composition">
+            <div class="sudio_composition__wrapper">
+                <h2 class="studio-composition__title">
+                    продумали все до мелосей, чтобы овободить вашу голову от забот
+                </h2>
+                <ul class="studio-composition__list">
+                    <li class="studio-composition__studio-zone studio-zone">
+                        <img src="" alt="" class="studio-zone__img">
+                        <h3 class="sudio-zone__title">
+                            зона отдыха
+                        </h3>
+                        <p class="studio-zone__text">
+                            Большая комната ожидания с водой, чаем и кофе в дрип-пакетах
+                        </p>
+                    </li>
+                    <li class="studio-composition__studio-zone studio-zone">
+                        <img src="" alt="" class="studio-zone__img">
+                        <h3 class="sudio-zone__title">
+                            зона playback
+                        </h3>
+                        <p class="studio-zone__text">
+                            Установлена плазма 55’, чтобы смотреть трансляцию из студии в режиме реального времени
+                        </p>
+                    </li>
+                    <li class="studio-composition__studio-zone studio-zone">
+                        <img src="" alt="" class="studio-zone__img">
+                        <h3 class="sudio-zone__title">
+                            зона грима
+                        </h3>
+                        <p class="studio-zone__text">
+                            Отдельное помещение с грим-постом, вешалкой и отпаривателем
+                        </p>
+                    </li>
+                    <li class="studio-composition__studio-zone studio-zone">
+                        <img src="" alt="" class="studio-zone__img">
+                        <h3 class="sudio-zone__title">
+                            парковочные места
+                        </h3>
+                        <p class="studio-zone__text">
+                            2 парковочных места для наших гостей прямо под окнами в тихом, закрытом дворе
+                        </p>
+                    </li>
+                    <li class="studio-composition__studio-zone studio-zone">
+                        <img src="" alt="" class="studio-zone__img">
+                        <h3 class="sudio-zone__title">
+                            дополнительные услуги
+                        </h3>
+                        <ul class="studio-zone__list">
+                            <li class="studio-zone__add add">
+                                <p class="add__text">
+                                    Видеомонтаж и пост-продакшн
+                                </p>
+                            </li>
+                            <li class="studio-zone__add add">
+                                <p class="add__text">
+                                    создание подкастов
+                                </p>
+                            </li>
+                            <li class="studio-zone__add add">
+                                <p class="add__text">
+                                    создание эфирной графики
+                                </p>
+                            </li>
+                            <li class="studio-zone__add add">
+                                <p class="add__text">
+                                    продюссирование стримов
+                                </p>
+                            </li>
+                        <a href="" class="studio-zone__link link">
+                            <span class="link-text">
+                                забронировать студию
+                            </span>
+                        </a>
+                    </li>
+                </ul>
             </div>
-            <div class="basictxt">
-                <p>кол-во камер</p>
-                <p><input type="radio" name=" 3" id="3  " checked> 1 камера  <input type="radio" name=" " id="  "> 2 камеры</p>
-                <p><input type="radio" name=" " id="  "> 3 камеры <input type="radio" name=" " id="  "> 4 камеры</p>
-            </div class="basictxt">
-            <div class="basictxt">
-                <p>кол-во героев в кадре</p>
-                <p><input type="radio" name="4 " id="  4" checked> 1 человек  <input type="radio" name=" " id="  "> 3 человека</p>
-                <p><input type="radio" name=" " id="  "> 3 человека <input type="radio" name=" " id="  "> 4 и более</p>
+        </section>
+        <section class="probable-price">
+            <div class="probable-price__wrapper">
+                <h2 class="probable-price__title">
+                    узнайте предварительную стоимость
+                </h2>
+                <p class="probable-price__text">
+                    Работа команды, использование общей зоны, грим-пост и парковочные места включены в стоимость. Стоимость студии без сопровождения (команды) обсуждается индивидуально.
+                </p>
+                <img src="" alt="" class="probable-price__img">
+                <ul class="probable-price__list">
+                    <li class="probable-price__survay survay">
+                        <p class="survay__question">
+                            выберите студию
+                        </p>
+
+                        <input type="radio" class="survay__answers">
+                        <input type="radio" class="survay__answers">
+                        <input type="radio" class="survay__answers">
+                        <input type="radio" class="survay__answers">
+                    </li>
+                    <li class="probable-price__survay survay">
+                        <p class="survay__question">
+                            продолжительность
+                        </p>
+                        <input type="radio" class="survay__answers">
+                        <input type="radio" class="survay__answers">
+                        <input type="radio" class="survay__answers">
+                        <input type="radio" class="survay__answers">
+                    </li>
+                    <li class="probable-price__survay survay">
+                        <p class="survay__question">
+                            кол-во камер
+                        </p>
+                        <input type="radio" class="survay__answers">
+                        <input type="radio" class="survay__answers">
+                        <input type="radio" class="survay__answers">
+                        <input type="radio" class="survay__answers">
+                    </li>
+                    <li class="probable-price__survay survay">
+                        <p class="survay__question">
+                            кол-во героев в кадре
+                        </p>
+                        <input type="radio" class="survay__answers">
+                        <input type="radio" class="survay__answers">
+                        <input type="radio" class="survay__answers">
+                        <input type="radio" class="survay__answers">
+                    </li>
+                    <li class="probable-price__survay survay">
+                        <p class="survay__question">
+                            тип услуги
+                        </p>
+                        <input type="radio" class="survay__answers">
+                        <input type="radio" class="survay__answers">
+                        <inpet type="radio" class="survay__answers">
+                        <input type="radio" class="survay__answers">
+                    </li>
+                    <p class="probable-price__price">
+                        15 000 р
+                        <span class="probable-price__price-text">
+                            предварительная стоимость
+                        </span>
+                    </p>
+                    <a href="" class="probable-price__link">
+                        <span class="probable-price__link-text">
+                            забронировать студию
+                        </span>
+                    </a>
+                </ul>
             </div>
-            <div class="basictxt">
-                <p>тип услуги</p>
-                <p><input type="radio" name="5 " id=" 5 " checked> запись  </p>
-                <p><input type="radio" name=" " id="  "> стрим   </p>
+        </section>
+        <section class="studio-equipment">
+            <div class="studio-equipment__wrapper">
+                <h2 class="studio-equipment__title">
+                    установлено новое съемочное оборудование и осветительные приборы
+                </h2>
+                <p class="studio-equipment__text">
+                    нажмите на интересующее оборудование
+                </p>
+                <ul class="studio-equipment__list">
+                    <li class="sudio-equipment__elem elem">
+                        <img src="" alt="" class="elem__img">
+                        <p class="elem__text">
+                            Видеокамеры Sony FX6 4K с ассортиментом оптики
+
+                        </p>
+                    </li>
+                    <li class="sudio-equipment__elem elem">
+                        <img src="" alt="" class="elem__big-img">
+
+                    </li>
+                    <li class="sudio-equipment__elem elem">
+                        <img src="" alt="" class="elem__img">
+                        <p class="elem__text">
+                            Микрофоны Октава МК-105 и радиопетлички Sennheiser
+                        </p>
+                    </li>
+                    <li class="sudio-equipment__elem elem">
+                        <img src="" alt="" class="elem__img">
+                        <p class="elem__text">
+                            Осветительные приборы
+                        </p>
+                    </li>
+                    <li class="sudio-equipment__elem elem">
+                        <img src="" alt="" class="elem__img">
+                        <p class="elem__text">
+                            Оборудование для поканальной записи и онлайн-трансляций
+                        </p>
+                    </li>
+                    <li class="sudio-equipment__elem elem">
+                        <img src="" alt="" class="elem__img">
+                        <p class="elem__text">
+                            акустический паралон, бас-ловушки и диффузоры для правильной акустики
+                        </p>
+                    </li>
+                </ul>
             </div>
-            <p class="hwin">15 000р</p>
-            <p class="ps">предварительная стоимость</p>
-            <button>
-                <a  class="link" href="">забронировать студию</a>
-            </button>
-            <!-- Это что за покемон?! Никаких ссылок внутри кнопок -->
-            </p>
-            <!-- инпутам не нужны параграфы, вся секция под удаление -->
         </section>
-        <!-- Отдельная секция -->
-        <h3>установлено новое съемочное оборудование и осветительные приборы</h3>
-        нажмите на интересующее оборудование
-        <!-- Это что за текст вне тегов? -->
-        <br>
-        <!-- Нет -->
-        <section class="window"><img src=" " alt=" ">
-            <p class="basictxt">Видеокамеры Sony FX6 4K с ассортиментом оптики </p>
-        </section>
-        <br>
-        <img src=" " alt=" ">
-        <br>
-        <section class="window"><img src=" " alt=" ">
-            <p class="basictxt">Микрофоны Октава МК-105 и радиопетлички Sennheiser </p>
-        </section>
-        <br>
-        <section class="window"><img src=" " alt=" ">
-            <p class="basictxt">осветительные приборы </p>
-        </section>
-        <br>
-        <section class="window"><img src=" " alt=" ">
-            <p class="basictxt">Оборудование для поканальной записи и онлайн-трансляций </p>
-        </section>
-        <br>
-        <section class="window"><img src=" " alt=" ">
-            <p class="basictxt">акустический паралон, бас-ловушки и диффузоры для правильной акустики</p>
-        </section>
-        <!-- То что выше - в переработку, список - это один, должны быть чекбоксы - два -->
-        <!-- То что ниже - собираем в секции -->
-        <h3>удобное пространство, в котором есть все необходимое</h3>
-        <img src=" " alt=" ">
-        <section class="orange">
-            <br>
-            <!-- нет, убираем их все -->
-            <h3>получите бесплатный <nope>тест-драйв студии</nope></h3>
-            <!-- что nope? Такого тега нет -->
-            <div class="basictxt">
-                оставьте заявку и получите бесплатные 30 минут, за которые вы сможете:
+        <section class="studio-space">
+            <div class="studio-space__wrapper">
+                <h2 class="studio-space__title">
+                    удобное пространтсво,в котором есть все необхлдимое
+                </h2>
+                <img src="" alt="" class="studio-space__img">
             </div>
-            <!-- Никакого текста в дивах -->
-            <ul>
-                <li><div class="basictxt">познакомиться со всеми опциями студии</div></li>
-                <li><div class="basictxt">научиться пользоваться основным оборудованием</div></li>
-                <li><div class="basictxt">получение рекомендации от специаоистов по работе в кадре</div></li>
-            </ul>
-            <!-- Никакого текста в дивах -->
-            <br>
-            <button class="bl"> получите тест-драйв <a href=" "></a></button>
-            <p><img src=" " alt=" "></p>
-            <h3>снято в нашей студии</h3>
-            <a href=" "></a>
-            <H3>возьмем всю организацию <nope>и технические заботы на себя</nope></H3>
-            <div class="basictxt"> стоимость включена работа администратора, который поможет все подключить, записать подкаст или провести онлайн-трансляцию
-            после окончания проекта – загрузим исходники на файлообменник при необходимости</div>
-            <button class="bl">забронировать <a href=""></a></button>
-            <h3>закроем самые частые вопросы</h3>
-            <h3><nope>какие условия бронирования?</nope></h3>
-            <nope>Забронировать студию можно по предоплате 50%. Оплата безналом или по QR-коду на счет организации. При отмене бронирования позднее чем за 24 часа до начала, предоплата не возвращается.
-            </nope>
-            <h3><nope>есть парковка?</nope></h3>
-            <nope>На территории есть 1 бесплатное парковочное место. В 2-х минутах пешком – платная городская парковка по 40 р/час, на которой всегда есть места.
-            </nope>
-            <h3>свяжитесь с нами <nope>по любому вопросу</nope></h3>
-            <img src=" " alt=" ">
-            <br>
-            <img src=" " alt=" "> 
-            <nope>
-                hello@tochkakontenta.ru
-                <br>
-                <img src=" " alt=" "> 
-                hello@tochkakontenta.ru
-                <br><img src=" " alt=" "> 
-                +7 909 151-08-70
-                <br>
-                <button><img src=" " alt=" "><a href=""></a></button>
-                <button><img src=" " alt=" "><a href=""></a></button>
-                <br>
-                <img src=" " alt=" ">
-                работаем с 8:00 до 22:00 по предварительной записи
-                <br><img src=" " alt=" ">
-                Москва, ул. Садовая-Каретная улица, 20с2
-            </nope>
+        </section>
+        <section class="test-drive">
+            <div class="test-drive__wrapper">
+                <h2 class="test-drive__title">
+                    получите бесплатный
+                    <span class="test-drive__color-title">
+                        тест-драйв студии
+                    </span>
+                </h2>
+                <p class="test-drive__text">
+                    Оставьте заявку и получите бесплатные 30 минут, за которые вы сможете:
+                </p>
+                <ul class="test-drive__list">
+                    <li class="test-drive__opportunities opportunities">
+                        <p class="opportunities__text">
+                            Познакомиться со всеми опциями студии
+                        </p>
+                    </li>
+                    <li class="test-drive__opportunities opportunities">
+                        <p class="opportunities__text">
+                            Научиться пользоваться основным оборудованием
+                        </p>
+                    </li>
+                    <li class="test-drive__opportunities opportunities">
+                        <p class="opportunities__text">
+                            Получить рекомендации от специалистов по работе в кадре
+                        </p>
+                    </li>
+                </ul>
+                </p>
+                <a href="" class="test-drive__link link">
+                    <span class="link__text">
+                        получить тест-драйы
+                    </span>
+                </a>
+                <img src="" alt="" class="test-drive__img">
+            </div>
+        </section>
+        <section class="studio-movie">
+            <div class="studio-movie__wrapper">
+                <h2 class="studio-movie__title">
+                    снято в нашей студии
+                </h2>
+                <ul class="studio-movie__list">
+                    <li class="studio-movie__video video">
+                        <img src="" alt="" class="video__exemple">
+                    </li>
+                    <li class="studio-movie__video video">
+                        <img src="" alt="" class="video__exemple">
+                    </li>
+                    <li class="studio-movie__video video">
+                        <img src="" alt="" class="video__exemple">
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="organization">
+            <div class="organization__wrapper">
+                <h2 class="organization__title">
+                    возьмем всю организацию
+                    <span class="organization__tech">
+                        и технические заботы на себя
+                    </span>
+                </h2>
+                <p class="organization__text">
+                    В стоимость включена работа администратора, который поможет все подключить, записать подкаст или провести онлайн-трансляцию
+        
+                </p>
+                <p class="organization__text">
+                    после окончания проекта – загрузим исходники на файлообменник при необходимости
+
+                </p>
+                <a href="" class="organization__link">
+                    <span class="organization__link-text">
+                        забронировать
+                    </span>
+                </a>
+                <h2 class="organization__questions">
+                    закроем самые частые вопросы
+                </h2>
+                <h3 class="organization__questions-title">
+                    Какие Условия бронирования?
+                </h3>
+                <p class="organization__answer">
+                    Забронировать студию можно по предоплате 50%. Оплата безналом или по QR-коду на счет организации. При отмене бронирования позднее чем за 24 часа до начала, предоплата не возвращается.
+
+                </p>
+                <h3 class="organization__questions-title">
+                    есть парковака?
+                </h3>
+                <p class="organization__answer">
+                    На территории есть 1 бесплатное парковочное место. В 2-х минутах пешком – платная городская парковка по 40 р/час, на которой всегда есть места.
+                </p>
+            </div>
+        </section>
+        <section class="studio-contacts">
+            <div class="studio-contacts__wrapper">
+                <h2 class="studio-contacts__title">
+                    свяжитесь с нами
+                    <span class="studio-contacts__color-title">
+                        по любому вопросу
+                    </span>
+                </h2>
+                <img src="" alt="" class="studio-contacts__map">
+                <a href="" class="studio-contacts__mail mal">
+                    <img src="" alt="" class="mail__img">
+                    <span class="mail__text">
+                        hello@tochkakontenta.ru
+                    </span>
+                </a>
+                <a href="" class="studio-contacts__phone phone">
+                    <img src="" alt="" class="phone__img">
+                    <span class="phone__text">
+                        +7 909 151-08-70
+                    </span>
+                </a>
+                <a href="" class="studio-contacts__tg tg">
+                    <img src="" alt="" class="tg__img">
+
+                    <span class="tg__text">
+                        telegram
+
+                    </span>
+                </a>
+                <a href="" class="studio-contacts__whapp whapp">
+                    <img src="" alt="" class="whapp__img">
+                    <span class="whapp__text">
+                        whatsapp
+
+                    </span>
+                </a>
+                <img src="" alt="" class="studio-contacts__time-img">
+                <p class="studio-contacts__time-text time-text">
+                    Работаем с 8:00 до 22:00
+                    <span class="time-text__recording">
+                        по предварительной записи
+                    </span>
+                </p>
+                <img src="" alt="" class="studio-contacts__address-img">
+                <p class="studio-contacts__address-text">
+                    Москва, ул. Садовая-Каретная улица, 20с2
+                </p>
+            </div>
         </section>
     </main>
-    <footer>
-        <img src=" " alt=" ">
-        TOCHKA
-        cтудии кейсы
-        <br>
-        тест-драйв
-        контакты
-        <br>
-        <button><a href=""></a><img src=" " alt=" "></button>
-        <button><a href=""></a><img src=" " alt=" "></button>
-        <button><a href=""></a><img src=" " alt=" "></button>
-        <button><a href=""></a><img src=" " alt=" "></button>
-        <p>hello@tochkakontenta.ru</p>
-        <p>+7 909 151-08-70</p>
-        <div class="foot"><p>ООО «Стрим Парк», ОГРН 1187847305931
-        </p>
-        <p>
-        Политика конфиденциальности
-        </p>
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <a href="" class="footer__logo logo">
+                <img src="" alt="" class="logo__img">
+            </a>
+            <button class="footer__button button">
+                <span class="button__studio">
+                    студии
+                </span>
+            </button>
+            <button class="footer__button button">
+                <span class="button__case">
+                    кейсы
+                </span>
+            </button>
+            <button class="footer__button button">
+                <span class="button__test">
+                    тест-драйв
+                </span>
+            </button>
+            <button class="footer__button button">
+                <span class="button__contacts">
+                    контакты
+                </span>
+            </button>
+            <a href="" class="footer-link__tg tg">
+                <img src="" alt="" class="tg__img">
+                <span class="tg__text">
+                    Telegramm
+                </span>
+            </a>
+            <a href="" class="footer-link__whapp whapp">
+                <img src="" alt="" class="whapp__img">
+                <span class="whapp__text"> 
+                    whatsapp
+                </span>
+            </a>
+            <a href="" class="footer-link__vk vk">
+                <img src="" alt="" class="vk__img">
+                <span class="vk__text">
+                    vk
+                </span>
+            </a>
+            <a href="" class="footer-link__yt yt">
+                <img src="" alt="" class="yt__img">
+                <span class="yt__text">
+                    youtube
+                </span>
+            </a>
+            <a href="" class="footer-link__mail mail">
+                <span class="mail__text">
+                    hello@tochkakontenta.ru
+                </span>
+            </a>
+            <a href="" class="footer-link__phone phone">
+                <span class="phone__text">
+                    +7 909 151-08-70
+                </span>
+            </a>
+            <p class="footer__text">
+                ООО «Стрим Парк», ОГРН 1187847305931
+            </p>
+            <p class="footer__text">
+                Политика конфиденциальности
+            </p>
+            <p class="footer__text text">
+                Разработка сайта —
+                <span class="text__developer">
+                    Kate lazareva
+                </span>
+            </p>
         </div>
     </footer>
-    
-
-    
 </body>
+
 </html>
