@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css\style.css">
     <link rel="stylesheet" href="css\normalize.css">
+    <link rel="stylesheet" href="css\style.css">
     <title>Document</title>
 </head>
 
@@ -39,10 +39,8 @@
                 <p class="hero__text">
                     съемочное пространство, оборудование и обслуживание от 3 900 ₽/час
                 </p>
-                <a href="" class="hero__link link">
-                    <span class="link__text">
-                        получить бесплатный тест-драйв
-                    </span>
+                <a href="" class="hero__link">
+                    получить бесплатный тест-драйв
                 </a>
             </div>
         </section>
@@ -65,10 +63,8 @@
                             </span>
                             от 4 000 ₽/час
                         </p>
-                            <a href="" class="studio-card__alink alink">
-                            <span class="alink__text">
-                                подробнее о студии
-                            </span>
+                        <a href="" class="studio-card__link">
+                            подробнее о студии
                         </a>
                     </li>
                     <li class="about-studio__studio-card studio-card">
@@ -84,10 +80,8 @@
                             </span>
                             от 4 000 ₽/час
                         </p>
-                        <a href="" class="studio-card__alink alink">
-                            <span class="alink__text">
-                                подробнее о студии
-                            </span>
+                        <a href="" class="studio-card__link">
+                            подробнее о студии
                         </a>
                     </li>
                     <li class="about-studio__studio-card studio-card">
@@ -103,10 +97,8 @@
                             </span>
                             от 4 000 ₽/час
                         </p>
-                        <a href="" class="studio-card__alink alink">
-                            <span class="alink__text">
-                                подробнее о студии
-                            </span>
+                        <a href="" class="studio-card__link">
+                            подробнее о студии
                         </a>
                     </li>
                     <li class="about-studio__studio-card studio-card">
@@ -121,10 +113,8 @@
                             </span>
                             от 4 000 ₽/час
                         </p>
-                        <a href="" class="studio-card__alink alink">
-                            <span class="alink__text">
-                                подробнее о студии
-                            </span>
+                        <a href="" class="studio-card__link">
+                            подробнее о студии
                         </a>
                     </li>
                 </ul>
@@ -198,11 +188,10 @@
                                     продюссирование стримов
                                 </p>
                             </li>
-                            <a href="" class="studio-zone1__link link">
-                                <span class="link-text">
-                                    забронировать студию
-                                </span>
-                            </a>
+                        </ul>
+                        <a href="" class="studio-zone1__link">
+                            забронировать студию
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -217,53 +206,104 @@
                     Стоимость студии без сопровождения (команды) обсуждается индивидуально.
                 </p>
                 <img src="" alt="" class="probable-price__img">
-                <ul class="probable-price__list">
-                    <li class="probable-price__survay survay">
+                <form action=" ">
+                    <div class="probable-price__survay survay">
                         <p class="survay__question">
                             выберите студию
                         </p>
-
-                        <input type="radio" class="survay__answers">
-                        <input type="radio" class="survay__answers">
-                        <input type="radio" class="survay__answers">
-                        <input type="radio" class="survay__answers">
-                    </li>
-                    <li class="probable-price__survay survay">
+                        <label>
+                            <input type="radio" name="choise studio" class="survay__answers">
+                            кастом
+                        </label>
+                        <label>
+                            <input type="radio" name="choise studio" class="survay__answers">
+                            вебинар
+                        </label>
+                        <label>
+                            <input type="radio" name="choise studio" class="survay__answers">
+                            подкаст
+                        </label>
+                        <label>
+                            <input type="radio" name="choise studio" class="survay__answers">
+                            4 студия
+                        </label>
+                    </div>
+                    <div class="probable-price__survay survay">
                         <p class="survay__question">
                             продолжительность
                         </p>
-                        <input type="radio" class="survay__answers">
-                        <input type="radio" class="survay__answers">
-                        <input type="radio" class="survay__answers">
-                        <input type="radio" class="survay__answers">
-                    </li>
-                    <li class="probable-price__survay survay">
+                        <label>
+                            <input type="radio" name="time" class="survay__answers">
+                            1-2 часа
+                        </label>
+                        <label>
+                            <input type="radio" name="time" class="survay__answers">
+                            4 часа
+                        </label>
+                        <label>
+                            <input type="radio" name="time" class="survay__answers">
+                            3 часа
+                        </label>
+                        <label>
+                            <input type="radio" name="time" class="survay__answers">
+                            5 и более
+                        </label>
+                    </div>
+                    <div class="probable-price__survay survay">
                         <p class="survay__question">
                             кол-во камер
                         </p>
-                        <input type="radio" class="survay__answers">
-                        <input type="radio" class="survay__answers">
-                        <input type="radio" class="survay__answers">
-                        <input type="radio" class="survay__answers">
-                    </li>
-                    <li class="probable-price__survay survay">
+                        <label>
+                            <input type="radio" name="camera" class="survay__answers">
+                            1 камера
+                        </label>
+                        <label>
+                            <input type="radio" name="camera" class="survay__answers">
+                            3 камеры
+                        </label>
+                        <label>
+                            <input type="radio" name="camera" class="survay__answers">
+                            2 камеры
+                        </label>
+                        <label>
+                            <input type="radio" name="camera" class="survay__answers">
+                            4 камеры
+                        </label>
+                    </div>
+                    <div class="probable-price__survay survay">
                         <p class="survay__question">
                             кол-во героев в кадре
                         </p>
-                        <input type="radio" class="survay__answers">
-                        <input type="radio" class="survay__answers">
-                        <input type="radio" class="survay__answers">
-                        <input type="radio" class="survay__answers">
-                    </li>
-                    <li class="probable-price__survay survay">
+                        <label>
+                            <input type="radio" name="heroes" class="survay__answers">
+                            1 человек
+                        </label>
+                        <label>
+                            <input type="radio" name="heroes" class="survay__answers">
+                            3 человека
+                        </label>
+                        <label>
+                            <input type="radio" name="heroes" class="survay__answers">
+                            2 человека
+                        </label>
+                        <label>
+                            <input type="radio" name="heroes" class="survay__answers">
+                            4 и более
+                        </label>
+                    </div>
+                    <div class="probable-price__survay survay">
                         <p class="survay__question">
                             тип услуги
                         </p>
-                        <input type="radio" class="survay__answers">
-                        <input type="radio" class="survay__answers">
-                        <inpet type="radio" class="survay__answers">
-                            <input type="radio" class="survay__answers">
-                    </li>
+                        <label>
+                            <input type="radio" name="service" class="survay__answers">
+                            запись
+                        </label>
+                        <label>
+                            <input type="radio" name="service" class="survay__answers">
+                            стрим
+                        </label>
+                    </div>
                     <p class="probable-price__price">
                         15 000 р
                         <span class="probable-price__price-text">
@@ -271,11 +311,9 @@
                         </span>
                     </p>
                     <a href="" class="probable-price__link">
-                        <span class="probable-price__link-text">
-                            забронировать студию
-                        </span>
+                        забронировать студию
                     </a>
-                </ul>
+                </form>
             </div>
         </section>
         <section class="studio-equipment">
@@ -286,43 +324,26 @@
                 <p class="studio-equipment__text">
                     нажмите на интересующее оборудование
                 </p>
-                <ul class="studio-equipment__list">
-                    <li class="sudio-equipment__elem elem">
-                        <img src="" alt="" class="elem__img">
-                        <p class="elem__text">
-                            Видеокамеры Sony FX6 4K с ассортиментом оптики
-
-                        </p>
-                    </li>
-                    <li class="sudio-equipment__elem elem">
-                        <img src="" alt="" class="elem__big-img">
-
-                    </li>
-                    <li class="sudio-equipment__elem elem">
-                        <img src="" alt="" class="elem__img">
-                        <p class="elem__text">
-                            Микрофоны Октава МК-105 и радиопетлички Sennheiser
-                        </p>
-                    </li>
-                    <li class="sudio-equipment__elem elem">
-                        <img src="" alt="" class="elem__img">
-                        <p class="elem__text">
-                            Осветительные приборы
-                        </p>
-                    </li>
-                    <li class="sudio-equipment__elem elem">
-                        <img src="" alt="" class="elem__img">
-                        <p class="elem__text">
-                            Оборудование для поканальной записи и онлайн-трансляций
-                        </p>
-                    </li>
-                    <li class="sudio-equipment__elem elem">
-                        <img src="" alt="" class="elem__img">
-                        <p class="elem__text">
-                            акустический паралон, бас-ловушки и диффузоры для правильной акустики
-                        </p>
-                    </li>
-                </ul>
+                <button class="sudio-equipment__button button">
+                    <img src="" alt="" class="button__img">
+                    Видеокамеры Sony FX6 4K с ассортиментом оптики
+                </button>
+                <button class="sudio-equipment__button button">
+                    <img src="" alt="" class="button__img">
+                    Микрофоны Октава МК-105 и радиопетлички Sennheiser
+                </button>
+                <button class="sudio-equipment__button button">
+                    <img src="" alt="" class="button__img">
+                    Осветительные приборы
+                </button>
+                <button class="sudio-equipment__button button">
+                    <img src="" alt="" class="button__img">
+                    Оборудование для поканальной записи и онлайн-трансляций
+                </button>
+                <button class="sudio-equipment__button button">
+                    <img src="" alt="" class="button__img">
+                    Акустический паралон, бас-ловушки и диффузоры для правильной акустики
+                </button>
             </div>
         </section>
         <section class="studio-space">
@@ -361,11 +382,8 @@
                         </p>
                     </li>
                 </ul>
-                </p>
-                <a href="" class="test-drive__link link">
-                    <span class="link__text2">
-                        получить тест-драйв
-                    </span>
+                <a href="" class="test-drive__link">
+                    получить тест-драйв
                 </a>
                 <img src="" alt="" class="test-drive__img">
             </div>
@@ -399,35 +417,40 @@
                 <p class="organization__text">
                     В стоимость включена работа администратора, который поможет все подключить, записать подкаст или
                     провести онлайн-трансляцию
-
                 </p>
                 <p class="organization__text">
                     после окончания проекта – загрузим исходники на файлообменник при необходимости
-
                 </p>
                 <a href="" class="organization__link">
-                    <span class="organization__link-text">
-                        забронировать
-                    </span>
+                    забронировать
                 </a>
-                <h2 class="organization__questions">
+            </div>
+        </section>
+        <section class="mp-questions">
+            <div class="mp-questions__wrapper">
+                <h2 class="mp-questions__questions">
                     закроем самые частые вопросы
                 </h2>
-                <h3 class="organization__questions-title">
-                    Какие Условия бронирования?
-                </h3>
-                <p class="organization__answer">
-                    Забронировать студию можно по предоплате 50%. Оплата безналом или по QR-коду на счет организации.
-                    При отмене бронирования позднее чем за 24 часа до начала, предоплата не возвращается.
-
-                </p>
-                <h3 class="organization__questions-title">
-                    есть парковака?
-                </h3>
-                <p class="organization__answer">
-                    На территории есть 1 бесплатное парковочное место. В 2-х минутах пешком – платная городская парковка
-                    по 40 р/час, на которой всегда есть места.
-                </p>
+                <div>
+                    <h3 class="mp-questions__questions-title">
+                        Какие Условия бронирования?
+                    </h3>
+                    <p class="mp-questions__answer">
+                        Забронировать студию можно по предоплате 50%. Оплата безналом или по QR-коду на счет
+                        организации.
+                        При отмене бронирования позднее чем за 24 часа до начала, предоплата не возвращается.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="mp-questions__questions-title">
+                        есть парковака?
+                    </h3>
+                    <p class="mp-questions__answer">
+                        На территории есть 1 бесплатное парковочное место. В 2-х минутах пешком – платная городская
+                        парковка
+                        по 40 р/час, на которой всегда есть места.
+                    </p>
+                </div>
             </div>
         </section>
         <section class="studio-contacts">
@@ -439,33 +462,32 @@
                     </span>
                 </h2>
                 <img src="" alt="" class="studio-contacts__map">
-                <a href="" class="studio-contacts__mail mal">
+                <a href="mailto:hello@tochkakontenta.ru" class="studio-contacts__mail mail">
                     <img src="" alt="" class="mail__img">
                     <span class="mail__text">
                         hello@tochkakontenta.ru
                     </span>
                 </a>
-                <a href="" class="studio-contacts__phone phone">
+                <a href="tel:+79091510870" class="studio-contacts__phone phone">
                     <img src="" alt="" class="phone__img">
                     <span class="phone__text">
                         +7 909 151-08-70
                     </span>
                 </a>
-                <a href="" class="studio-contacts__tg tg">
-                    <img src="" alt="" class="tg__img">
-
-                    <span class="tg__text">
-                        telegram
-
-                    </span>
-                </a>
-                <a href="" class="studio-contacts__whapp whapp">
-                    <img src="" alt="" class="whapp__img">
-                    <span class="whapp__text">
-                        whatsapp
-
-                    </span>
-                </a>
+                <div class="studio-contacts social">
+                    <a href="" class="social__link">
+                        <img src="" alt="" class="social__img">
+                        <span class="visually-hidden">
+                            telegram
+                        </span>
+                    </a>
+                    <a href="" class="social__link">
+                        <img src="" alt="" class="sociak__img">
+                        <span class="visually-hidden">
+                            whatsapp
+                        </span>
+                    </a>
+                </div>
                 <img src="" alt="" class="studio-contacts__time-img">
                 <p class="studio-contacts__time-text time-text">
                     Работаем с 8:00 до 22:00
@@ -483,58 +505,52 @@
     <footer class="footer">
         <div class="footer__wrapper">
             <a href="" class="footer__logo logo">
-                <img src="" alt="" class="logo__img">
+                <img src=" " alt=" " class="logo__img">
             </a>
-            <button class="footer__button button">
-                <span class="button__studio">
-                    студии
-                </span>
-            </button>
-            <button class="footer__button button">
-                <span class="button__case">
-                    кейсы
-                </span>
-            </button>
-            <button class="footer__button button">
-                <span class="button__test">
-                    тест-драйв
-                </span>
-            </button>
-            <button class="footer__button button">
-                <span class="button__contacts">
-                    контакты
-                </span>
-            </button>
-            <a href="" class="footer-link__tg tg">
-                <img src="" alt="" class="tg__img">
-                <span class="tg__text">
-                    Telegramm
-                </span>
+            <a href=" " class="footer__sections">
+                студии
             </a>
-            <a href="" class="footer-link__whapp whapp">
-                <img src="" alt="" class="whapp__img">
-                <span class="whapp__text">
-                    whatsapp
-                </span>
+            <a href="" class="footer__sections">
+                кейсы
             </a>
-            <a href="" class="footer-link__vk vk">
-                <img src="" alt="" class="vk__img">
-                <span class="vk__text">
-                    vk
-                </span>
+            <a href="" class="footer__sections">
+                тест-драйв
             </a>
-            <a href="" class="footer-link__yt yt">
-                <img src="" alt="" class="yt__img">
-                <span class="yt__text">
-                    youtube
-                </span>
+            <a href="" class="footer__sections">
+                контакты
             </a>
-            <a href="" class="footer-link__mail mail">
+            <div class="footer__social social">
+                <a href="" class="social__link">
+                    <img src="" alt="" class="social__img">
+                    <span class="visually-hidden">
+                        Telegramm
+                    </span>
+                </a>
+                <a href="" class="social__link">
+                    <img src="" alt="" class="social__img">
+                    <span class="visually-hidden">
+                        whatsapp
+                    </span>
+                </a>
+                <a href="" class="social__link">
+                    <img src="" alt="" class="social__img">
+                    <span class="visually-hidden">
+                        vk
+                    </span>
+                </a>
+                <a href="" class="social__link">
+                    <img src="" alt="" class="social__img">
+                    <span class="visually-hidden">
+                        youtube
+                    </span>
+                </a>
+            </div>
+            <a href="mailto:hello@tochkakontenta.ru" class="footer-link__mail mail">
                 <span class="mail__text">
                     hello@tochkakontenta.ru
                 </span>
             </a>
-            <a href="" class="footer-link__phone phone">
+            <a href="tel:+79091510870" class="footer-link__phone phone">
                 <span class="phone__text">
                     +7 909 151-08-70
                 </span>
@@ -542,18 +558,17 @@
             <p class="footer__text">
                 ООО «Стрим Парк», ОГРН 1187847305931
             </p>
-            <p class="footer__text">
+            <a href=" " class="footer-link__privacy-policy">
                 Политика конфиденциальности
-            </p>
+            </a>
             <p class="footer__text text">
                 Разработка сайта —
-                <span class="text__developer">
+                <a href=" " class="text__link-developer">
                     Kate lazareva
-                </span>
+                </a>
             </p>
         </div>
     </footer>
 </body>
 
 </html>
-
