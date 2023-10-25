@@ -426,3 +426,14 @@ section {
     margin: auto;
     padding: auto;
 }
+
+.studio-card__img {
+    object-fit: fill;
+}
+.hero__text-img {
+    border-radius: 1.5rem;
+}
+.header__burger {
+    text-align: right;
+    object-position: right ;
+}
