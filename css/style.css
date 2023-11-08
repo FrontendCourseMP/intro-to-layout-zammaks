@@ -1,3 +1,22 @@
+/* steelfish-bold - cyrillic_latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Steelfish';
+    font-style: normal;
+    font-weight: bold;
+    src: url('/css/fonts/SteelfishRg-Bold.woff2') format('woff2');
+  }
+  
+  /* steelfish-500 - cyrillic_latin */
+  @font-face {
+    font-display: swap;
+    font-family: 'Steelfish';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/css/fonts/SteelfishRg-Regular.woff2') format('woff2');
+  }
+
+
 /* inter-300 - latin */
 @font-face {
     font-display: swap;
@@ -75,16 +94,12 @@
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-* {
-    box-sizing: border-box;
-}
-
 
 :root {
     --first_color: #34344E;
     --second-color: #F49C89;
     --third-color: #ECEEF8;
-    --font_size: 62.5%
+    font-size: 62.5%
 }
 
 header {
@@ -94,6 +109,13 @@ header {
     line-height: 1.4;
     color: white;
     background-color: var(--first_color);
+    padding: 17px 20px 16px 20px;
+}
+
+.header__logo,.header__phone,.header__burger{
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 
@@ -117,10 +139,11 @@ header {
 .hero__title {
     color: #ECEEF8;
     font-size: 5rem;
-    font-family: inter, sans-serif;
+    font-family: 'Steelfish';
     font-weight: 700;
     line-height: 1.1;
     text-transform: uppercase;
+    margin: 0;
 }
 
 body {
@@ -149,8 +172,17 @@ body {
     border-radius: 2rem;
     margin-left: 30%;
 }
+.burger{
+    background-color: var(--first_color);
+    border: none;
+}
 
 
+.hero__title-right {
+    display: block;
+    padding-left: 28px;
+
+}
 .link__text,
 .probable-price__link-text {
     color: white;
@@ -314,7 +346,7 @@ ul {
     color: #34344E;
     font-size: 1.2rem;
     font-family: Inter, sans-serif;
-    font-weight: 400;
+    font-weight: 400;display
     text-transform: uppercase;
     line-height: 1.4;
     word-wrap: break-word;
@@ -345,6 +377,13 @@ ul {
 
 }
 
+.logo__text{
+    color: white;
+}
+
+.logo{
+    text-decoration: none;
+}
 .test-drive__link,
 .organization__link {
     box-sizing: content-box;
@@ -419,8 +458,7 @@ footer {
 }
 
 section {
-    margin: auto;
-    padding: auto;
+    margin: 0px 20px;
 }
 
 .studio-card__img {
@@ -439,18 +477,14 @@ section {
 }
 
 .burger__img{
-    width: 2rem;
-    height: 2rem;
+    width: 44px;
+    height: 26px;
 
 }
 header{
     display: flex;
     justify-content: space-between;
 }
-.hero__title{
-    margin: 2rem;
-}
 
-.hero__title-right{
-    text-align: right;
-}
+
+
