@@ -257,17 +257,36 @@ ul {
     background-color: #F49C89;
 }
 
-.studio-card__title,
-.sudio-zone__title,
-.organization__questions-title {
-    color: #34344E;
+.studio-card__title
+{
+    font-family: Steelfish,sans-serif;
     font-size: 3rem;
-    font-family: inter, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    margin-top: 18px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 0;
+    
+}
+.studio-card__text
+ {
+    color: #34344E;
+    font-size: 1.2rem;
+    font-family: Inter, sans-serif;
     font-weight: 400;
     text-transform: uppercase;
-    line-height: 1.1;
-    letter-spacing: 0.02;
+    line-height: 1.4;
     word-wrap: break-word;
+    margin-top:15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 0;
+
+
 }
 
 .sudio-zone1__title {
@@ -282,19 +301,70 @@ ul {
 }
 
 .about-studio__studio-card {
-    border-radius: 2rem;
-    padding: 2rem;
-    margin: 1rem;
-    width: 45rem;
+    border-radius: 10px;
+    position:relative;
+    width: 320px;
+    margin: 0 auto;
+
+    
+    
+}
+.studio-card__img{
+    width: 100%;
+    border-radius: 10px;
+}
+.about-studio__list{
+    padding: 0;
 }
 
 .studio-card__price {
+    display: block;
     border-radius: 2rem;
     padding: 0.25rem;
     background-color: #F49C89;
-    margin: 1rem;
+    margin-top: 12px;
+    padding: 5px 12px;
+    width: 77px;
+    text-align: center;
+    transform: rotate(-5deg);
+}
+.studio-card__price--money{
+    display: block;
+    font-family: Inter,sans-serif;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: -0.24px;
+    text-transform: uppercase;
+    margin-top: 12px;
+    margin-bottom: 20px;
+    margin-left: 20px;
 }
 
+.studio-card__link{
+    display: block;
+    color: #F49C89;
+    text-align: right;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: Inter,sans-serif;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: -0.48px;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    margin-top: 12px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+
+}
+
+.studio-card__oneline{
+    display: flex;
+    justify-content: space-between;
+}
 .sudio-equipment__elem {
     border-radius: 1.5rem;
     padding: 0.5rem;
@@ -302,29 +372,7 @@ ul {
     width: 45rem;
 }
 
-.studio-card__text,
-.studio-zone__text,
-.elem__text,
-.opportunities__text,
-.test-drive__text,
-.organization__text,
-.organization__answer,
-.mail__text,
-.phone__text,
-.tg__text,
-.whapp__text,
-.studio-contacts__time-text,
-.studio-contacts__address-text {
-    color: #34344E;
-    font-size: 1.2rem;
-    font-family: Inter, sans-serif;
-    font-weight: 400;
-    text-transform: uppercase;
-    line-height: 1.4;
-    word-wrap: break-word;
 
-
-}
 
 .add,
 .link-text,
