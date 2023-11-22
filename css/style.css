@@ -1049,7 +1049,6 @@ input[type='radio']:checked::after {
 .organization,
 .studio-contacts {
     background-color: #F49C89;
-    width:100%;
 
 
 }
@@ -1126,6 +1125,7 @@ footer {
 .organization__wrapper,
 .mp-questions__wrapper,
 .studio-contacts__wrapper,
+.test-drive__wrapper,
 .footer__wrapper
     {
     box-sizing: border-box;
