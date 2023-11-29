@@ -483,7 +483,7 @@
                 <h2 class="mp-questions__questions">
                     закроем самые частые вопросы
                 </h2>
-                <div>
+                <div class="mp-questions__questions-container">
                     <h3 class="mp-questions__questions-title">
                         Какие Условия бронирования?
                     </h3>
@@ -493,7 +493,7 @@
                         При отмене бронирования позднее чем за 24 часа до начала, предоплата не возвращается.
                     </p>
                 </div>
-                <div>
+                <div class="mp-questions__questions-container">
                     <h3 class="mp-questions__questions-title">
                         есть парковака?
                     </h3>
@@ -509,7 +509,7 @@
             <div class="studio-contacts__wrapper">
                 <h2 class="studio-contacts__title">
                     свяжитесь с нами
-                    <span class="studio-contacts__color-title">
+                    <span class="studio-contacts__title--right">
                         по любому вопросу
                     </span>
                 </h2>
@@ -522,7 +522,7 @@
                         </span>
                     </a>
                     <a href="tel:+79091510870" class="studio-contacts__phone phone">
-                        <img src="img/phone.svg" alt="" class="phone__img">
+                        <img src="img/iconph.svg" alt="" class="phone__img">
                         <span class="phone__text">
                             +7 909 151-08-70
                         </span>
@@ -542,17 +542,23 @@
                         </span>
                     </a>
                 </div>
-                <img src="img/time.svg" alt="" class="studio-contacts__time-img">
-                <p class="studio-contacts__time-text time-text">
-                    Работаем с 8:00 до 22:00
-                    <span class="time-text__recording">
-                        по предварительной записи
-                    </span>
-                </p>
-                <img src="img/address.svg" alt="" class="studio-contacts__address-img">
-                <p class="studio-contacts__address-text">
-                    Москва, ул. Садовая-Каретная улица, 20с2
-                </p>
+                <div class="studio-contacts__address">
+                    <div class="studio-contacts__address--timetable">
+                        <img src="img/time.svg" alt="" class="studio-contacts__time-img">
+                        <p class="studio-contacts__time-text time-text">
+                            Работаем с 8:00 до 22:00
+                            <span class="time-text__recording">
+                                по предварительной записи
+                            </span>
+                        </p>
+                    </div>
+                    <div class="studio-contacts__address--place">
+                        <img src="img/address.svg" alt="" class="studio-contacts__address-img">
+                        <p class="studio-contacts__address-text">
+                            Москва, ул. Садовая-Каретная улица, 20с2
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
