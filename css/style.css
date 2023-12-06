@@ -193,6 +193,7 @@ body {
     margin-top: 20px;
     margin-left: 12px;
     margin-right: 12px;
+    margin-bottom: 20px;;
     ;
 }
 
@@ -1255,7 +1256,43 @@ input[type='radio']:checked::after {
     letter-spacing: -0.24px;
     text-transform: uppercase;
     padding-left: 10px;
+    padding-right: 20px;
 }
+
+.studio-contacts__address{
+    padding-bottom: 90px;
+}
+.footer__logo{
+    display: flex;
+    align-items: center;
+    padding-top: 87px;
+    padding-left: 20px;
+    color: #FFF;
+    font-family: Inter,sans-serif   ;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: -0.6px;
+    text-transform: uppercase;
+}
+
+.logo__img{
+    width: 12px;
+    height: 24px;
+    padding-right: 10px;
+}
+
+.footer__list{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+
 
 
 
@@ -1349,17 +1386,6 @@ input[type='radio']:checked::after {
 
 footer {
     background-color: #34344E;
-    color: white;
-    font-size: 1.2rem;
-    font-family: Inter, sans-serif;
-    font-weight: 400;
-    text-transform: uppercase;
-    line-height: 1.4;
-    word-wrap: break-word;
-}
-
-.footer__text {
-    color: rgba(255, 255, 255, 0.40);
 }
 
 .footer-link__mail,
@@ -1430,5 +1456,8 @@ footer {
 
 header {
     display: flex;
+    align: center;
     justify-content: space-between;
+    max-width: 360px;
+    margin: 0 auto;
 }
