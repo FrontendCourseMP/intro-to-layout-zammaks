@@ -17,6 +17,12 @@
                 TOCHKA
             </span>
         </a>
+        <div class="header__address address">
+            <img src="img/0.svg" alt="" class="address__img">
+            <span class="address__text">
+                8 минут от м. Маяковская
+            </span>
+        </div>
         <a href="" class="header__phone phone">
             <img src="img/phone.svg" alt="phone" class="phone__img">
             <span class="phone__text">
@@ -33,27 +39,29 @@
                 <h1 class="hero__title">
                     студия для онлайн-трансляций,
                     <img src="/img/title_1.jpg" alt="" height="41" width="85" class="hero__text-img">
-                    <span class="hero__title-right">
+                    <span class="hero__title--center">
                         <img src="img/title_2.jpg" alt="" height="41" width="62" class="hero__text-img--small">
                         видеосъемки
                     </span>
-                    <span class="hero__title-right">
+                    <span class="hero__title--right">
                         и записи подкастов
                     </span>
                 </h1>
-                <p class="hero__text">
-                    съемочное пространство, оборудование и обслуживание от 3 900 ₽/час
-                </p>
-                <a href="" class="hero__link">
-                    получить бесплатный тест-драйв
-                </a>
+                <div class="hero__line">
+                    <p class="hero__text">
+                        съемочное пространство, оборудование и обслуживание от 3 900 ₽/час
+                    </p>
+                    <a href="" class="hero__link">
+                        получить бесплатный тест-драйв
+                    </a>
+                </div>
             </div>
         </section>
         <section class="about-studio">
             <div class="about-studio__wrapper">
                 <h2 class="about-studio__title">
-                    <span class="about-studio__title--right">в нашей студии есть</span>
-                    <span class="about-studio__title--left">несколько зон </span>
+                    <span class="about-studio__title--left">в нашей студии есть</span>
+                    <span class="about-studio__title--center">несколько зон </span>
                     <span class="about-studio__title--right">с разным интерьером</span>
                 </h2>
                 <ul class="about-studio__list">
@@ -146,11 +154,15 @@
         <section class="studio-composition">
             <div class="studio-composition__wrapper">
                 <h2 class="studio-composition__title">
+                    <span class="studio-composition__title--center">
                     продумали все до мелочей,
+                    </span>
                     <span class="studio-composition__title--right">
                         чтобы овободить
                     </span>
-                    вашу голову от забот
+                    <span class="studio-composition__title--doubright">
+                        вашу голову от забот
+                    </span>
                 </h2>
                 <ul class="studio-composition__list">
                     <li class="studio-composition__studio-zone studio-zone">
@@ -233,128 +245,130 @@
                 </p>
                 <form action=" " class="probable-price__form">
                     <img src="img/probable_price.jpg" alt="" class="probable-price__img">
-                    <fieldset class="probable-price__survey survey">
-                        <p class="survey__question">
-                            выберите студию
-                        </p>
-                        <div class="survey__wrapper">
-                            <label>
-                                <input type="radio" name="choise studio" class="survey__answers">
-                                кастом
-                            </label>
-                            <label>
-                                <input type="radio" name="choise studio" class="survey__answers">
-                                подкаст
-                            </label>
-                            <label>
-                                <input type="radio" name="choise studio" class="survey__answers">
-                                вебинар
-                            </label>
-
-                            <label>
-                                <input type="radio" name="choise studio" class="survey__answers">
-                                4 студия
-                            </label>
-                        </div>
-                    </fieldset>
-                    <fieldset class="probable-price__survey survey">
-                        <p class="survey__question">
-                            продолжительность
-                        </p>
-                        <div class="survey__wrapper">
-                            <label>
-                                <input type="radio" name="time" class="survey__answers">
-                                1-2 часа
-                            </label>
-                            <label>
-                                <input type="radio" name="time" class="survey__answers">
-                                3 часа
-                            </label>
-                            <label>
-                                <input type="radio" name="time" class="survey__answers">
-                                4 часа
-                            </label>
-
-                            <label>
-                                <input type="radio" name="time" class="survey__answers">
-                                5 и более
-                            </label>
-                        </div>
-                    </fieldset>
-                    <fieldset class="probable-price__survey survey">
-                        <p class="survey__question">
-                            кол-во камер
-                        </p>
-                        <div class="survey__wrapper">
-                            <label>
-                                <input type="radio" name="camera" class="survey__answers">
-                                1 камера
-                            </label>
-                            <label>
-                                <input type="radio" name="camera" class="survey__answers">
-                                2 камеры
-                            </label>
-                            <label>
-                                <input type="radio" name="camera" class="survey__answers">
-                                3 камеры
-                            </label>
-                            <label>
-                                <input type="radio" name="camera" class="survey__answers">
-                                4 камеры
-                            </label>
-                        </div>
-                    </fieldset>
-                    <fieldset class="probable-price__survey survey">
-                        <p class="survey__question">
-                            кол-во героев в кадре
-                        </p>
-                        <div class="survey__wrapper">
-                            <label>
-                                <input type="radio" name="heroes" class="survey__answers">
-                                1 человек
-                            </label>
-                            <label>
-                                <input type="radio" name="heroes" class="survey__answers">
-                                2 человека
-                            </label>
-                            <label>
-                                <input type="radio" name="heroes" class="survey__answers">
-                                3 человека
-                            </label>
-                            <label>
-                                <input type="radio" name="heroes" class="survey__answers">
-                                4 и более
-                            </label>
-                        </div>
-                    </fieldset>
-                    <fieldset class="probable-price__survey survey">
-                        <div class="survey__wrapper--double">
-                            <div class="survey__start">
-                                <p class="survey__question question">
-                                    тип услуги
-                                </p>
+                    <div class="question__wrapper">
+                        <fieldset class="probable-price__survey survey">
+                            <p class="survey__question">
+                                выберите студию
+                            </p>
+                            <div class="survey__wrapper">
                                 <label>
-                                    <input type="radio" name="service" class="survey__answers">
-                                    запись
+                                    <input type="radio" name="choise studio" class="survey__answers">
+                                    кастом
                                 </label>
                                 <label>
-                                    <input type="radio" name="service" class="survey__answers">
-                                    стрим
+                                    <input type="radio" name="choise studio" class="survey__answers">
+                                    подкаст
+                                </label>
+                                <label>
+                                    <input type="radio" name="choise studio" class="survey__answers">
+                                    вебинар
+                                </label>
+
+                                <label>
+                                    <input type="radio" name="choise studio" class="survey__answers">
+                                    4 студия
                                 </label>
                             </div>
-                            <div class="survey__finish">
-                                <p class="probable-price__price">
-                                    15 000 р
-                                    <span class="probable-price__price-text">
-                                        предварительная стоимость
-                                    </span>
-                                </p>
+                        </fieldset>
+                        <fieldset class="probable-price__survey survey">
+                            <p class="survey__question">
+                                продолжительность
+                            </p>
+                            <div class="survey__wrapper">
+                                <label>
+                                    <input type="radio" name="time" class="survey__answers">
+                                    1-2 часа
+                                </label>
+                                <label>
+                                    <input type="radio" name="time" class="survey__answers">
+                                    3 часа
+                                </label>
+                                <label>
+                                    <input type="radio" name="time" class="survey__answers">
+                                    4 часа
+                                </label>
+
+                                <label>
+                                    <input type="radio" name="time" class="survey__answers">
+                                    5 и более
+                                </label>
                             </div>
-                        </div>
-                        <a href="" class="probable-price__link">
-                            забронировать студию
-                        </a>
-                    </fieldset>
+                        </fieldset>
+                        <fieldset class="probable-price__survey survey">
+                            <p class="survey__question">
+                                кол-во камер
+                            </p>
+                            <div class="survey__wrapper">
+                                <label>
+                                    <input type="radio" name="camera" class="survey__answers">
+                                    1 камера
+                                </label>
+                                <label>
+                                    <input type="radio" name="camera" class="survey__answers">
+                                    2 камеры
+                                </label>
+                                <label>
+                                    <input type="radio" name="camera" class="survey__answers">
+                                    3 камеры
+                                </label>
+                                <label>
+                                    <input type="radio" name="camera" class="survey__answers">
+                                    4 камеры
+                                </label>
+                            </div>
+                        </fieldset>
+                        <fieldset class="probable-price__survey survey">
+                            <p class="survey__question">
+                                кол-во героев в кадре
+                            </p>
+                            <div class="survey__wrapper">
+                                <label>
+                                    <input type="radio" name="heroes" class="survey__answers">
+                                    1 человек
+                                </label>
+                                <label>
+                                    <input type="radio" name="heroes" class="survey__answers">
+                                    2 человека
+                                </label>
+                                <label>
+                                    <input type="radio" name="heroes" class="survey__answers">
+                                    3 человека
+                                </label>
+                                <label>
+                                    <input type="radio" name="heroes" class="survey__answers">
+                                    4 и более
+                                </label>
+                            </div>
+                        </fieldset>
+                        <fieldset class="probable-price__survey survey">
+                            <div class="survey__wrapper--double">
+                                <div class="survey__start">
+                                    <p class="survey__question question">
+                                        тип услуги
+                                    </p>
+                                    <label>
+                                        <input type="radio" name="service" class="survey__answers">
+                                        запись
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="service" class="survey__answers">
+                                        стрим
+                                    </label>
+                                </div>
+                                <div class="survey__finish">
+                                    <p class="probable-price__price">
+                                        15 000 р
+                                        <span class="probable-price__price-text">
+                                            предварительная стоимость
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                            <a href="" class="probable-price__link">
+                                забронировать студию
+                            </a>
+                        </fieldset>
+                    </div>
                 </form>
             </div>
         </section>
@@ -414,26 +428,28 @@
                         тест-драйв студии
                     </span>
                 </h2>
-                <p class="test-drive__text">
-                    Оставьте заявку и получите бесплатные 30 минут, за которые вы сможете:
-                </p>
-                <ul class="test-drive__list">
-                    <li class="test-drive__opportunities opportunities">
-                        <p class="opportunities__text">
-                            Познакомиться со всеми опциями студии
-                        </p>
-                    </li>
-                    <li class="test-drive__opportunities opportunities">
-                        <p class="opportunities__text">
-                            Научиться пользоваться основным оборудованием
-                        </p>
-                    </li>
-                    <li class="test-drive__opportunities opportunities">
-                        <p class="opportunities__text">
-                            Получить рекомендации от специалистов по работе в кадре
-                        </p>
-                    </li>
-                </ul>
+                <div class="test-drive__zayavka">
+                    <p class="test-drive__text">
+                        Оставьте заявку и получите бесплатные 30 минут, за которые вы сможете:
+                    </p>
+                    <ul class="test-drive__list">
+                        <li class="test-drive__opportunities opportunities">
+                            <p class="opportunities__text">
+                                Познакомиться со всеми опциями студии
+                            </p>
+                        </li>
+                        <li class="test-drive__opportunities opportunities">
+                            <p class="opportunities__text">
+                                Научиться пользоваться основным оборудованием
+                            </p>
+                        </li>
+                        <li class="test-drive__opportunities opportunities">
+                            <p class="opportunities__text">
+                                Получить рекомендации от специалистов по работе в кадре
+                            </p>
+                        </li>
+                    </ul>
+                </div>
                 <a href="" class="test-drive__link">
                     получить тест-драйв
                 </a>
@@ -466,16 +482,20 @@
                         и технические заботы на себя
                     </span>
                 </h2>
-                <p class="organization__text">
-                    В стоимость включена работа администратора, который поможет все подключить, записать подкаст или
-                    провести онлайн-трансляцию
-                </p>
-                <p class="organization__text">
-                    после окончания проекта – загрузим исходники на файлообменник при необходимости
-                </p>
-                <a href="" class="organization__link">
-                    забронировать
-                </a>
+                <div class="organisation__text--decoration">
+                    <p class="organization__text">
+                        В стоимость включена работа администратора, который поможет все подключить, записать подкаст или
+                        провести онлайн-трансляцию
+                    </p>
+                    <div class="organisation__files">
+                        <p class="organization__text">
+                            после окончания проекта – загрузим исходники на файлообменник при необходимости
+                        </p>
+                        <a href="" class="organization__link">
+                            забронировать
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="mp-questions">
