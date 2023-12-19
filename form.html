@@ -12,15 +12,15 @@
 
 <body>
     <header class="header">
-         <a href="" class="header__logo logo">
-             <img src="img/point.svg" alt="logo" class="logo__img">
-             <span class="logo__text">
-                 TOCHKA
-             </span>
-         </a>
-         <div class="header__address address">
-             <img src="img/0.svg" alt="" class="address__img">
-             <span class="address__text">
+        <a href="" class="header__logo logo">
+            <img src="img/point.svg" alt="logo" class="logo__img">
+            <span class="logo__text">
+                TOCHKA
+            </span>
+        </a>
+        <div class="header__address address">
+            <img src="img/0.svg" alt="" class="address__img">
+            <span class="address__text">
                 8 минут от м. Маяковская
             </span>
         </div>
@@ -35,9 +35,42 @@
         </button>
     </header>
     <main>
-        <form action="" class="form">
-            
-        </form>
+        <div class="form__wrapper">
+            <h1 class="form__title">
+                Регистрация
+            </h1>
+            <form action="//httpbin.org/post" method="post" class="form">
+                <fieldset class="form__fieldset--first first">
+                    <legend class="first__legend">Личная информация</legend>
+                    <label>Имя *<input type="text" name="people-name" placeholder="Иван" required></label>  
+                    <label>Дата рождения *<input type="date" name="bithday" required></label>   
+                    <label>
+                        Пол
+                        <select name="sex">
+                            <option value="M" selected>М</option>
+                            <option value="Ж">Ж</option>
+                        </select>
+                    </label>
+                </fieldset>
+                <fieldset class="form__fieldset--second second">
+                    <legend class="second__legend">Контактые данные</legend>
+                    <label>E-mail *<input type="email" name="email" placeholder="ivanov1980@mail.ru" required></label>  
+                    <label>Пароль *<input type="password" name="password" required></label> 
+                    <label>Телефон<input type="tel" name="phone" placeholder="+7 (777) 777-77-77"></label>
+                    <label>
+                        Удобный интервал для связи
+                        <select name="time">
+                            <option value="Утро" selected>Утро</option>
+                            <option value="День">День</option>
+                            <option value="Вечер">Вечер</option>
+                            <option value="Ночь">Ночь</option>
+                        </select>
+                    </label>
+                </fieldset>
+                <button type="submit" class="button__send">Отправить</button>
+                <button type="reset" class="button__reset">Очистить</button>
+            </form>
+        </div>
     </main>
     <footer class="footer">
         <div class="footer__wrapper">

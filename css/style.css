@@ -1941,7 +1941,7 @@ header {
 
     .hero__link {
         display: block;
-        width: 351px;
+        min-width: 300px;
         padding: 13px 30px;
         font-size: 1.5rem;
         margin-top: 20px;
