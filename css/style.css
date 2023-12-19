@@ -319,10 +319,14 @@ ul {
 
 }
 
+.hero__text--width-img,
+.hero__text--width-img--small{
+    display: none;
+}
 .studio-card__img {
     display: block;
-    width: 100%;
     height: 336px;
+    width: 100%;
     object-fit: cover;
     border-radius: 10px;
     
@@ -422,6 +426,7 @@ ul {
     border-radius: 10px;
     height: 261px;
     width: 261px;
+    object-fit: cover;
 }
 
 .studio-zone__title {
@@ -552,8 +557,9 @@ ul {
 
 .probable-price__img {
     display: block;
-    width: 320px;
+    object-fit: cover;
     height: 280px;
+    width: 320px;
     border-radius: 10px;
 }
 
@@ -1108,13 +1114,16 @@ input[type='radio']:checked::after {
 
 .studio-contacts__map{
     display: block;
-    width: 320px;
-    height: 354px;
+    max-width: 650px;
+    max-height: 400px;
     object-fit: cover;
     margin-top: 30px;
     margin-left: 12px;
     margin-right: 12px;
     border-radius: 10px;
+    position: absolute;
+    left: 700px;
+    top: 9400px;
 }
 
 .studio-contacts__mail-phone{
@@ -1123,6 +1132,7 @@ input[type='radio']:checked::after {
     margin-right: 12px;
     border-bottom: 1px solid rgba(52, 52, 78, 0.20);
     border-top: 1px solid rgba(52, 52, 78, 0.20);
+    max-width: 600px;
 }
 .studio-contacts__mail{
     text-decoration: none;
@@ -1138,6 +1148,7 @@ input[type='radio']:checked::after {
 .mail__img{
     width: 24px;
     height: 24px;
+    margin: 10px;
 }
 
 .mail__text{
@@ -1156,6 +1167,7 @@ input[type='radio']:checked::after {
 .phone__img{
     width: 24px;
     height: 24px;
+    margin: 10px;
 }
 
 .studio-contacts__phone{
@@ -1189,6 +1201,8 @@ input[type='radio']:checked::after {
     padding-top: 17px;
     padding-bottom: 17px;
     padding-left: 12px;
+    margin: 10px;
+    max-width: 600px;
 }
 
 .studio-contacts__address{
@@ -1196,16 +1210,19 @@ input[type='radio']:checked::after {
     margin-right: 12px;
     border-bottom: 1px solid rgba(52, 52, 78, 0.20);
     border-top: 1px solid rgba(52, 52, 78, 0.20);
+    max-width: 600px;
 
 }
 
 .studio-contacts__time-img{
     width: 24px;
     height: 24px;
+    margin: 10px;
 }
 .studio-contacts__address-img{
     width: 24px;
     height: 24px;
+    margin: 10px;
 }
 
 .studio-contacts__address--timetable{
@@ -1215,6 +1232,7 @@ input[type='radio']:checked::after {
     padding-top: 17px;
     padding-bottom: 18px;
     border-bottom: 1px solid rgba(52, 52, 78, 0.20);
+    max-width: 600px;
 
 
 }
@@ -1230,6 +1248,7 @@ input[type='radio']:checked::after {
     letter-spacing: -0.24px;
     text-transform: uppercase;
     padding-left: 10px;
+    margin-left: 10px;
 
 }
 
@@ -1270,6 +1289,7 @@ input[type='radio']:checked::after {
     text-transform: uppercase;
     padding-left: 10px;
     padding-right: 20px;
+    margin-left: 10px;
 }
 
 .studio-contacts__address{
@@ -1438,9 +1458,6 @@ footer {
     min-width: 340px;
 }
 
-.studio-card__img {
-    object-fit: fill;
-}
 
 .header__address{
     display: none;
@@ -1510,7 +1527,25 @@ header {
         justify-content: space-between;
         max-width: 1024px;
     }
-    
+    .hero__text-img,
+    .hero__text-img--small{
+        display: none;
+    }
+
+    .hero__text--width-img{
+        display: inline-block;
+        height: 67px;
+        width: 195px;
+        object-fit: cover;
+        border-radius: 200px;
+        
+    }
+    .hero__text--width-img--small{
+        display: inline-block;
+        height: 67px;
+        width: 103px;
+        border-radius: 200px;
+    }
     .header__address{
         display: inline;
         color: #FFF;
@@ -1542,8 +1577,9 @@ header {
     }
     .hero__title--right {
         display: block;
-        text-align: right;
+        text-align: center;
         padding-right: 10px;
+        padding-left: 100px;
     }
     .hero__text-img{
         width: 195px;
@@ -1695,18 +1731,21 @@ header {
         margin-top: 50px;
     }
     .studio-equipment__button--first{
-        width: 100%;
+        width: 708px;
         font-size: 1.5rem;
         margin-right: 30px;
 
     }
     .studio-equipment__button{
-        width: 100%;
+        width: 708px;
         font-size: 1.5rem;
         padding-right: 30px;
     }
     .studio-equipment__img--big{
-        width: 100%;
+        width: 708px;
+        height: 495px;
+        object-fit: cover;
+      
     }
     .studio-equipment__img{
         width: 60px;
@@ -1751,7 +1790,9 @@ header {
     }
     .test-drive__img{
         width: 708px;
-        height: 388px;
+        height: 100%;
+        border-radius: 20px;
+
     }
     .test-drive__link{
         margin-left: 430px;
@@ -1818,7 +1859,8 @@ header {
 @media screen and (min-width:1024px){
     
     *{
-        max-width: 2560px;
+        max-width: 2400px;
+        margin: 0 auto;
     }
 
     .hero__wrapper,
@@ -1837,13 +1879,14 @@ header {
         width: 100%;
         margin: 0 auto;
         padding: 0 50px;
-        max-width: 2560px;
+        max-width: 2400px;
     }
     
     header{
         justify-content: space-between;
-        max-width: 2560px;
-        padding: 0 50px;
+        max-width: 2400px;
+        padding: 5px 10px;
+    
     }
     
     .header__address{
@@ -1870,6 +1913,7 @@ header {
     .hero__title{
         font-size: 13rem;
         margin-top: 109px;
+        text-align: center;
     }
     .hero__title--center {
         display: block;
@@ -1877,20 +1921,22 @@ header {
     }
     .hero__title--right {
         display: block;
-        text-align: right;
+        text-align: center;
         padding-right: 10px;
     }
-    .hero__text-img{
+    .hero__text--width-img{
         width: 282px;
         height: 108px;
     }
-    .hero__text-img--small{
+    .hero__text--width-img--small{
         width: 186px;
         height: 108px;
     }
     .hero__text{
         font-size: 1.5rem;
         display: block;
+        padding-left: 60px;
+
     }
 
     .hero__link {
@@ -1901,17 +1947,19 @@ header {
         margin-top: 20px;
         margin-left: 12px;
         margin-right: 12px;
-        margin-bottom: 20px;;
-        ;
+        margin-bottom: 20px;
     }
     .hero__line{
+        padding-left: 500px;
         display: flex;
         flex-direction: row-reverse;
         justify-content: center;
+        align-items: center;
     }
     .about-studio__title{
         font-size: 9.2rem;
-        margin-top: 218px;
+        margin-top: 150px;
+        padding-left: 100px;
     }
     .about-studio__title--left {
         padding-left: 0;
@@ -1919,7 +1967,6 @@ header {
     }
     .about-studio__title--right {
         padding-left: 0;
-        text-align: center;
         margin-bottom: 50px;
     }
 
@@ -1949,6 +1996,7 @@ header {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+        max-width: 1300px;
     }
     .studio-composition__title{
         font-size: 9.2rem;
@@ -1968,10 +2016,21 @@ header {
     }
     .studio-zone{
         width: 392px;
+        height: 440px;
+        margin: 10px;
+    }
+    .studio-zone--addition{
+        width: 392px;
         margin: 20px;
+        height: 440px;
+        margin-top: 10px;
+    }
+    .studio-zone__link{
+        margin-top: 100 px;
     }
     .studio-zone__img{
         width: 392px;
+
     }
     .studio-zone__title{
         font-size: 4.2rem;
@@ -1995,12 +2054,28 @@ header {
         height: 100%;
         margin: 0 auto;
         margin-bottom: 150px;
+        max-width: 1310px;
+        max-height: 630px;
+        min-height: 600px;
+        min-width: 1190px;
 
 
     }
     .probable-price__img{
-        width: 598px;
-        height: 578px;
+        display: block;
+        max-width: 600px;
+        min-height: 630px;
+        object-fit: cover;
+        width: 100%;
+        position: relative;
+        z-index: 0;
+    }
+    .probable-price__link{
+        position: absolute;
+        z-index: 1;
+        left: 930px;
+        top: 530px;
+        
     }
     .survey__wrapper{
         flex-direction: column;
@@ -2027,38 +2102,54 @@ header {
         font-size: 4.2rem;
     }
     .studio-equipment__title{
-        display: inline;
+        display:inline;
+        text-align: left;
         font-size: 9.2rem;
     }
     .studio-equipment__title--center{
-        text-align: center;
+        text-align: left;
+        padding-left: 200px;
         
     }
     .studio-equipment__text{
         font-size: 1.5rem;
         margin-top: 50px;
+        margin-left: 100px;
     }
     .studio-equipment__button--first{
-        width: 100%;
         font-size: 1.5rem;
-        margin-right: 30px;
+        margin-left: 100px;
+        max-width: 568px;
 
     }
     .studio-equipment__button{
-        width: 100%;
         font-size: 1.5rem;
-        padding-right: 30px;
+        margin-top: 20px;
+        margin-left: 100px;
+        max-width: 568px;
     }
+
     .studio-equipment__img--big{
-        width: 100%;
+        display: block;
+        width: 550px;
+        height: 536px;
+        object-fit: cover;
+        margin: 20px auto;
+        position: absolute;
+        left: 800px;
+        top: 4700px;
+    
+
     }
     .studio-equipment__img{
         width: 60px;
         height: 50px;
+        margin: 10px 15px;
     }
     .studio-space__title{
         font-size: 9.2rem;
         margin-top: 150px;
+        margin-left: 100px;
         display: block;
     }
     .studio-space__title--center{
@@ -2071,11 +2162,13 @@ header {
         text-align: right;
     }
     .studio-space__img{
-        width: 95%;
+        width: 100%;
         height: 100%;
+        max-width: 1200px;
+        object-fit: cover;
         display: block;
-        margin-right: 20px;
-        margin-bottom: 160px;
+        margin: 20px auto;
+        margin-bottom: 150px;
     }
     .test-drive__title{
         padding-top: 150px;
@@ -2094,13 +2187,13 @@ header {
         font-size: 1.5rem;
     }
     .test-drive__img{
-        width: 1010px;
+        width: 100%;
         height: 388px;
-        object-fit: cover;
-        padding: 0 auto;
+        object-fit:contain;
+        margin-top: 40px;
     }
     .test-drive__link{
-        margin-left: 430px;
+        right: 500px;
         width: 200px;
         font-size: 1.5rem;
 
