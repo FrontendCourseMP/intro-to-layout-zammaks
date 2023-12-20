@@ -648,6 +648,9 @@ ul {
     padding: 0;
     margin: 0;
 }
+input:focus+span{
+    background-color:#a7a7ed;
+}
 
 .survey__question {
     color: #34344E;
@@ -658,7 +661,7 @@ ul {
     line-height: 140%;
     letter-spacing: -0.24px;
     text-transform: uppercase;
-    margin-top: 18px;
+    margin-top: 25px;
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 15px;
@@ -1642,7 +1645,7 @@ header {
 .footer__wrapper {
     box-sizing: border-box;
     width: 100%;
-    margin:0;
+    margin:0 auto;
     padding: 0 8px;
     max-width: 360px;
     min-width: 340px;
@@ -2057,7 +2060,7 @@ header {
         width: 100%;
         margin: 0 auto;
         padding: 0 50px;
-        max-width: 2400px;
+        max-width: 1200px;
     }
     
     header{
@@ -2383,7 +2386,7 @@ header {
         margin-top: 40px;
     }
     .test-drive__link{
-        right: 500px;
+        right: 800px;
         width: 200px;
         font-size: 1.5rem;
 
