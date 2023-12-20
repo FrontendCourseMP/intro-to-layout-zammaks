@@ -105,6 +105,58 @@
     font-size: 62.5%
 }
 
+::selection{
+    background-color: #F49C89;
+}
+
+a:hover,
+button:hover{ 
+    transform: scale(1.3);
+    transform: rotate(-2deg);
+    color: aliceblue;
+    transition: transform 0.5s, background-color 0.5s;
+    background-color: rebeccapurple ;
+    cursor: pointer;
+}
+
+label:hover{
+    transform: scale(1.2);
+    transition: transform 1s;
+    transform: rotate(-2deg);
+    color: #F49C89;
+    cursor: pointer;
+}
+
+a:active,
+button:active{ 
+    background-color: var(--first_color);
+    box-shadow: 0 3px rgb(0, 0, 0) inset;
+    transition: transform 0s, background-color 0s;
+}
+
+label:active{
+    transform: scale(1.2);
+    transition: transform 1s;
+    background-color: #F49C89;
+    cursor: pointer;
+}
+a:focus,
+button:focus{ 
+    transform: scale(1.3);
+    transition: transform 0.5s, background-color 0.5s;
+    background-color: rebeccapurple ;
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+label:focus{
+    transform: scale(1.3);
+    transition: transform 0.5s, background-color 0.5s;
+    background-color: rebeccapurple ;
+    cursor: pointer;
+    border: 2px solid black;
+}
+
 header {
     font-family: "inter", sans-serif;
     font-size: 1.5rem;
@@ -139,8 +191,32 @@ header {
 
 }
 
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+.skip-link {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    font-family: "Inter",sans-serif;
+    padding: 10px 15px;
+    color: whitesmoke;
+    background: #10F3AF;
+    transform: translateY(-100%);
+  }
 
-
+.skip-link:focus {
+    transform: translateY(20%);
+  }
 .hero__title {
     color: #ECEEF8;
     font-size: 5rem;
@@ -938,6 +1014,7 @@ input[type='radio']:checked::after {
 .test-drive__img {
     width: 320px;
     height: 388px;
+    object-fit: cover;
     margin-left: 20px;
     margin-right: 20px;
     border-radius: 10px 10px 0 0;
@@ -1448,8 +1525,7 @@ footer {
 .organization__wrapper,
 .mp-questions__wrapper,
 .studio-contacts__wrapper,
-.test-drive__wrapper,
-.footer__wrapper {
+.test-drive__wrapper {
     box-sizing: border-box;
     width: 100%;
     margin: 0 auto;
@@ -1497,7 +1573,99 @@ header {
     margin: 0 auto;
 }
 
+.footer__logo{
+    display: inline-block;
+    padding-top: 87px;
+    padding-left: 40px;
+    min-width: 80px;
+    color: var(--white, #FFF);
+    font-family: Inter,sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; 
+    letter-spacing: -0.6px;
+    text-transform: uppercase;
 
+}
+.footer__list{
+    display: inline-flex;
+    min-width: 250px;
+    min-height: 80px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-left: 100px;
+}
+.footer__anchor{
+    text-decoration: none;
+    color: var(--white, #FFF);
+    font-family: Inter,sans-serif;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; 
+    letter-spacing: -0.24px;
+    text-transform: uppercase;
+    padding: 20px;
+}
+.social{
+    display: inline-block;
+    margin: 0;
+    padding-left: 130px;
+}
+.social-vy{
+    display: inline-block;
+    margin: 0;
+}
+.social__img,
+.social-vy__img{
+    padding: 2px;
+}
+.footer__contacts{
+    margin-left: 120px;
+}
+.mail__text,
+.phone__text{
+    color: #FFF;
+    font-family: "Inter",sans-serif;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: -0.24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+.footer__wrapper {
+    box-sizing: border-box;
+    width: 100%;
+    margin:0;
+    padding: 0 8px;
+    max-width: 360px;
+    min-width: 340px;
+}
+.footer__text{
+    color: rgba(255, 255, 255, 0.40);
+    font-family: Inter,sans-serif;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: -0.24px;
+    text-transform: uppercase;
+    display: block;
+    padding: 5px;
+}
+.text__privacy-policy,
+.footer__developer,
+.form,
+.grid{
+    display: block;
+    text-decoration: none;
+    color: whitesmoke;
+}
 @media screen and (min-width:768px){
     
     *{
