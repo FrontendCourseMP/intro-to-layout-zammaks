@@ -100,14 +100,14 @@
 
 :root {
     --first_color: #34344E;
-    --second-color: #ff3507;
+    --second-color: #ffeb32;
     --third-color: #ECEEF8;
     font-size: 62.5%
 }
 
 
 ::selection{
-    background-color: #ff3507;
+    background-color: #ce7e6c;
 }
 
 a:hover,
@@ -124,7 +124,7 @@ label:hover{
     transform: scale(1.2);
     transition: transform 1s;
     transform: rotate(-2deg);
-    color: #ff3507;
+    color: #ce7e6c;
     cursor: pointer;
 }
 
@@ -138,7 +138,7 @@ button:active{
 label:active{
     transform: scale(1.2);
     transition: transform 1s;
-    background-color: #ff3507;
+    background-color: #ffeb32;
     cursor: pointer;
 }
 a:focus,
@@ -256,7 +256,7 @@ html{
 .hero__link {
     display: block;
     border-radius: 100px;
-    background-color: #ff3507;
+    background-color: #ffeb32;
     width: 260px;
     padding: 13px 30px;
     text-decoration: none;
@@ -304,7 +304,7 @@ html{
     text-transform: uppercase;
     line-height: 1.4;
     word-wrap: break-word;
-    background-color: #ff3507;
+    background-color: #ffeb32;
     text-align: center;
 
 }
@@ -444,7 +444,7 @@ ul {
 
 .studio-card__link {
     display: block;
-    color: #ff3507;
+    color: #ffeb32;
     text-align: right;
     font-variant-numeric: lining-nums proportional-nums;
     font-family: Inter, sans-serif;
@@ -540,7 +540,7 @@ ul {
 }
 
 .studio-zone--addition {
-    background-color: #ff3507;
+    background-color: #ffeb32;
 }
 
 .studio-zone__title--addition {
@@ -762,7 +762,7 @@ input[type='radio']::before {
     height: 20px;
     border-radius: 50%;
     background-color: #FFF;
-    border: 1.75px solid #ff3507;
+    border: 1.75px solid #ffeb32;
 }
 
 input[type='radio']:checked::after {
@@ -773,7 +773,7 @@ input[type='radio']:checked::after {
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    background-color: #ff3507;
+    background-color: #ffeb32;
 }
 
 .form__answer {
@@ -794,7 +794,7 @@ input[type='radio']:checked::after {
     letter-spacing: -0.24px;
     text-transform: uppercase;
     margin: 20px;
-    background-color: #ff3507;
+    background-color: #ffeb32;
     text-decoration: none;
 }
 
@@ -1436,7 +1436,7 @@ input[type='radio']:checked::after {
 }
 
 .alink__text {
-    color: #ff3507;
+    color: #ffeb32;
     font-size: 1.2rem;
     font-family: Inter, sans-serif;
     font-weight: 400;
@@ -1464,7 +1464,7 @@ input[type='radio']:checked::after {
 .organization,
 .studio-contacts,
 .mp-questions {
-    background-color: #ff3507;
+    background-color: #ffeb32;
 
 
 }
@@ -1516,7 +1516,7 @@ footer {
 }
 
 .text__developer {
-    color: #ff3507
+    color: #ffeb32
 }
 
 .hero__wrapper,
