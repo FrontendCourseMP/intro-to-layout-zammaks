@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <link rel="shortcut icon" href="img/point.svg">
+    <title>TOCHKA</title>
 </head>
 
 <body>
@@ -39,7 +40,7 @@
             <img src="img/burger.svg" alt="menu" height="44" width="26" class="burger__img">
         </button>
     </header>
-    <main>
+    <main id="main">
         <section class="hero">
             <div class="hero__wrapper">
                 <h1 class="hero__title">
@@ -59,7 +60,7 @@
                     <p class="hero__text">
                         съемочное пространство, оборудование и обслуживание от 3 900 ₽/час
                     </p>
-                    <a href="" class="hero__link">
+                    <a href="#test-drive" class="hero__link">
                         получить бесплатный тест-драйв
                     </a>
                 </div>
@@ -391,27 +392,29 @@
                 <p class="studio-equipment__text">
                     нажмите на интересующее оборудование
                 </p>
-                <button class="studio-equipment__button--first">
-                    <img src="img/eq1.jpg" alt="" class="studio-equipment__img">
-                    Видеокамеры Sony FX6 4K с ассортиментом оптики
-                </button>
-                <img src="img/big.jpeg" alt="" class="studio-equipment__img--big">
-                <button class="studio-equipment__button">
-                    <img src="img/eq2.jpg" alt="" class="studio-equipment__img">
-                    Микрофоны Октава МК-105 и радиопетлички Sennheiser
-                </button>
-                <button class="studio-equipment__button">
-                    <img src="img/eq3.jpg" alt="" class="studio-equipment__img">
-                    Осветительные приборы
-                </button>
-                <button class="studio-equipment__button">
-                    <img src="img/eq4.jpg" alt="" class="studio-equipment__img">
-                    Оборудование для поканальной записи и онлайн-трансляций
-                </button>
-                <button class="studio-equipment__button">
-                    <img src="img/eq5.jpg" alt="" class="studio-equipment__img">
-                    Акустический паралон, бас-ловушки и диффузоры для правильной акустики
-                </button>
+                <div class="eq-wrapper">
+                    <button class="studio-equipment__button--first">
+                        <img src="img/eq1.jpg" alt="" class="studio-equipment__img">
+                        Видеокамеры Sony FX6 4K с ассортиментом оптики
+                    </button>
+                    <img src="img/big.jpeg" alt="" class="studio-equipment__img--big">
+                    <button class="studio-equipment__button">
+                        <img src="img/eq2.jpg" alt="" class="studio-equipment__img">
+                        Микрофоны Октава МК-105 и радиопетлички Sennheiser
+                    </button>
+                    <button class="studio-equipment__button">
+                        <img src="img/eq3.jpg" alt="" class="studio-equipment__img">
+                        Осветительные приборы
+                    </button>
+                    <button class="studio-equipment__button">
+                        <img src="img/eq4.jpg" alt="" class="studio-equipment__img">
+                        Оборудование для поканальной записи и онлайн-трансляций
+                    </button>
+                    <button class="studio-equipment__button">
+                        <img src="img/eq5.jpg" alt="" class="studio-equipment__img">
+                        Акустический паралон, бас-ловушки и диффузоры для правильной акустики
+                    </button>
+                </div>
             </div>
         </section>
         <section class="studio-space">
@@ -428,7 +431,7 @@
                 <img src="img/space.png" alt="" class="studio-space__img">
             </div>
         </section>
-        <section class="test-drive">
+        <section class="test-drive" id="test-drive">
             <div class="test-drive__wrapper">
                 <h2 class="test-drive__title">
                     получите бесплатный
@@ -535,56 +538,61 @@
         </section>
         <section class="studio-contacts">
             <div class="studio-contacts__wrapper">
+                
                 <h2 class="studio-contacts__title">
                     свяжитесь с нами
                     <span class="studio-contacts__title--right">
                         по любому вопросу
                     </span>
                 </h2>
-                <img src="img/map.jpg" alt="map" class="studio-contacts__map">
-                <div class="studio-contacts__mail-phone">
-                    <a href="mailto:hello@tochkakontenta.ru" class="studio-contacts__mail mail">
-                        <img src="img/mail.svg" alt="mail" class="mail__img">
-                        <span class="mail__text">
-                            hello@tochkakontenta.ru
-                        </span>
-                    </a>
-                    <a href="tel:+79091510870" class="studio-contacts__phone phone">
-                        <img src="img/iconph.svg" alt="phone" class="phone__img">
-                        <span class="phone__text">
-                            +7 909 151-08-70
-                        </span>
-                    </a>
-                </div>
-                <div class="studio-contacts social">
-                    <a href="" class="social__link">
-                        <img src="img/tg.svg" alt="" class="social__img">
-                        <span class="visually-hidden">
-                            telegram
-                        </span>
-                    </a>
-                    <a href="" class="social__link">
-                        <img src="img/whapp.svg" alt="" class="social__img">
-                        <span class="visually-hidden">
-                            whatsapp
-                        </span>
-                    </a>
-                </div>
-                <div class="studio-contacts__address">
-                    <div class="studio-contacts__address--timetable">
-                        <img src="img/time.svg" alt="" class="studio-contacts__time-img">
-                        <p class="studio-contacts__time-text time-text">
-                            Работаем с 8:00 до 22:00
-                            <span class="time-text__recording">
-                                по предварительной записи
-                            </span>
-                        </p>
-                    </div>
-                    <div class="studio-contacts__address--place">
-                        <img src="img/address.svg" alt="" class="studio-contacts__address-img">
-                        <p class="studio-contacts__address-text">
-                            Москва, ул. Садовая-Каретная улица, 20с2
-                        </p>
+                <div class="box">
+                    <img src="img/map.jpg" alt="map" class="studio-contacts__map">
+                    <div class="text-contact">
+                        <div class="studio-contacts__mail-phone">
+                            <a href="mailto:hello@tochkakontenta.ru" class="studio-contacts__mail mail">
+                                <img src="img/mail.svg" alt="mail" class="mail__img">
+                                <span class="mail__text">
+                                    hello@tochkakontenta.ru
+                                </span>
+                            </a>
+                            <a href="tel:+79091510870" class="studio-contacts__phone phone">
+                                <img src="img/iconph.svg" alt="phone" class="phone__img">
+                                <span class="phone__text">
+                                    +7 909 151-08-70
+                                </span>
+                            </a>
+                        </div>
+                        <div class="studio-contacts social">
+                            <a href="" class="social__link">
+                                <img src="img/tg.svg" alt="" class="social__img">
+                                <span class="visually-hidden">
+                                    telegram
+                                </span>
+                            </a>
+                            <a href="" class="social__link">
+                                <img src="img/whapp.svg" alt="" class="social__img">
+                                <span class="visually-hidden">
+                                    whatsapp
+                                </span>
+                            </a>
+                        </div>
+                        <div class="studio-contacts__address">
+                            <div class="studio-contacts__address--timetable">
+                                <img src="img/time.svg" alt="" class="studio-contacts__time-img">
+                                <p class="studio-contacts__time-text time-text">
+                                    Работаем с 8:00 до 22:00
+                                    <span class="time-text__recording">
+                                        по предварительной записи
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="studio-contacts__address--place">
+                                <img src="img/address.svg" alt="" class="studio-contacts__address-img">
+                                <p class="studio-contacts__address-text">
+                                    Москва, ул. Садовая-Каретная улица, 20с2
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

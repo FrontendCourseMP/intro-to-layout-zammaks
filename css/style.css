@@ -105,6 +105,7 @@
     font-size: 62.5%
 }
 
+
 ::selection{
     background-color: #F49C89;
 }
@@ -234,6 +235,9 @@ body {
     box-sizing: border-box;
     background-color: #34344E;
 
+}
+html{
+    scroll-behavior: smooth;
 }
 
 .hero__text {
@@ -1191,16 +1195,13 @@ input[type='radio']:checked::after {
 
 .studio-contacts__map{
     display: block;
-    max-width: 650px;
-    max-height: 400px;
+    max-width: 330px;
     object-fit: cover;
     margin-top: 30px;
     margin-left: 12px;
-    margin-right: 12px;
+    margin-right: 8px;
     border-radius: 10px;
-    position: absolute;
-    left: 700px;
-    top: 9400px;
+
 }
 
 .studio-contacts__mail-phone{
@@ -1671,6 +1672,11 @@ header {
     *{
         max-width: 1024px;
     }
+    .box{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
 
     .hero__wrapper,
     .about-studio__wrapper,
@@ -2015,9 +2021,13 @@ header {
         font-size: 6.3rem;
         padding-left: 150px;
     }
+    .studio-contacts__wrapper{
+        position: relative;
+    }
     .studio-contacts__map{
-        width: 100%;
-        height: 100%;
+        max-width: 480px;
+        height: 400px;
+        object-fit: cover;
         margin: 0 auto;
         padding-top: 50px;
     }
@@ -2056,6 +2066,15 @@ header {
         padding: 5px 10px;
     
     }
+    .studio-contacts__wrapper{
+        position: relative;
+    }
+    .box{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+ 
     
     .header__address{
         display: inline;
@@ -2245,6 +2264,9 @@ header {
         top: 530px;
         
     }
+    .eq-wrapper{
+       position: relative;
+    }
     .survey__wrapper{
         flex-direction: column;
         flex-wrap: wrap;
@@ -2304,8 +2326,8 @@ header {
         object-fit: cover;
         margin: 20px auto;
         position: absolute;
-        left: 800px;
-        top: 4700px;
+        left: 700px;
+        bottom: 1px;
     
 
     }
@@ -2413,12 +2435,7 @@ header {
         font-size: 9.2rem;
         padding-left: 150px;
     }
-    .studio-contacts__map{
-        width: 100%;
-        height: 100%;
-        margin: 0 auto;
-        padding-top: 50px;
-    }
+}
  
 
-}   
+  
