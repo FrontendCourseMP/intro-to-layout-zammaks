@@ -99,9 +99,9 @@
 }
 
 :root {
-    --first_color: #34344E;
-    --second-color: #ffeb32;
-    --third-color: #ECEEF8;
+    --first_color: #242433;
+    --second-color: #ff856a;
+    --third-color: #ffffff;
     font-size: 62.5%
 }
 
@@ -138,7 +138,7 @@ button:active{
 label:active{
     transform: scale(1.2);
     transition: transform 1s;
-    background-color: #ffeb32;
+    background-color: #ff856a;
     cursor: pointer;
 }
 a:focus,
@@ -210,7 +210,7 @@ header {
     left: 50%;
     font-family: "Inter",sans-serif;
     padding: 10px 15px;
-    color: whitesmoke;
+    color: white;
     background: #10F3AF;
     transform: translateY(-100%);
   }
@@ -233,7 +233,7 @@ header {
 
 body {
     box-sizing: border-box;
-    background-color: #34344E;
+    background-color: #242433;
 
 }
 html{
@@ -256,7 +256,7 @@ html{
 .hero__link {
     display: block;
     border-radius: 100px;
-    background-color: #ffeb32;
+    background-color: #ff856a;
     width: 260px;
     padding: 13px 30px;
     text-decoration: none;
@@ -304,7 +304,7 @@ html{
     text-transform: uppercase;
     line-height: 1.4;
     word-wrap: break-word;
-    background-color: #ffeb32;
+    background-color: #ff856a;
     text-align: center;
 
 }
@@ -362,7 +362,7 @@ ul {
 }
 
 .studio-card__text {
-    color: #34344E;
+    color: #242433;
     font-size: 1.2rem;
     font-family: Inter, sans-serif;
     font-weight: 400;
@@ -444,7 +444,7 @@ ul {
 
 .studio-card__link {
     display: block;
-    color: #ffeb32;
+    color: #ff856a;
     text-align: right;
     font-variant-numeric: lining-nums proportional-nums;
     font-family: Inter, sans-serif;
@@ -510,7 +510,7 @@ ul {
 }
 
 .studio-zone__title {
-    color: #34344E;
+    color: #242433;
     font-family: Steelfish, sans-serif;
     font-size: 3rem;
     font-style: normal;
@@ -525,7 +525,7 @@ ul {
 }
 
 .studio-zone__text {
-    color: #34344E;
+    color: #242433;
     font-family: Inter, sans-serif;
     font-size: 1.2rem;
     font-style: normal;
@@ -540,7 +540,7 @@ ul {
 }
 
 .studio-zone--addition {
-    background-color: #ffeb32;
+    background-color: #ff856a;
 }
 
 .studio-zone__title--addition {
@@ -653,7 +653,7 @@ input:focus+span{
 }
 
 .survey__question {
-    color: #34344E;
+    color: #242433;
     font-family: Inter, sans-serif;
     font-size: 1.2rem;
     font-style: normal;
@@ -668,7 +668,7 @@ input:focus+span{
 }
 
 label {
-    color: #34344E;
+    color: #242433;
     font-family: Inter, sans-serif;
     font-size: 1.2rem;
     font-style: normal;
@@ -710,7 +710,7 @@ label {
 }
 
 .probable-price__price {
-    color: #34344E;
+    color: #242433;
     font-family: Steelfish, sans-serif;
     font-size: 3rem;
     font-style: normal;
@@ -762,7 +762,7 @@ input[type='radio']::before {
     height: 20px;
     border-radius: 50%;
     background-color: #FFF;
-    border: 1.75px solid #ffeb32;
+    border: 1.75px solid #ff856a;
 }
 
 input[type='radio']:checked::after {
@@ -773,7 +773,7 @@ input[type='radio']:checked::after {
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    background-color: #ffeb32;
+    background-color: #ff856a;
 }
 
 .form__answer {
@@ -794,7 +794,7 @@ input[type='radio']:checked::after {
     letter-spacing: -0.24px;
     text-transform: uppercase;
     margin: 20px;
-    background-color: #ffeb32;
+    background-color: #ff856a;
     text-decoration: none;
 }
 
@@ -848,7 +848,7 @@ input[type='radio']:checked::after {
     margin-left: 20px;
     margin-right: 20px;
     border: 3px solid #d82800;
-    color: #34344E;
+    color: #242433;
     font-variant-numeric: lining-nums proportional-nums;
     font-family: Inter, sans-serif;
     font-size: 1.2rem;
@@ -872,7 +872,7 @@ input[type='radio']:checked::after {
     margin-bottom: 0;
     margin-left: 20px;
     margin-right: 20px;
-    color: #34344E;
+    color: #242433;
     font-variant-numeric: lining-nums proportional-nums;
     font-family: Inter, sans-serif;
     font-size: 1.2rem;
@@ -957,11 +957,11 @@ input[type='radio']:checked::after {
     margin: 0;
     padding-left: 57px;
     padding-right: 20px;
-    color: #34344E
+    color: #242433
 }
 
 .test-drive__text {
-    color: #34344E;
+    color: #242433;
     font-variant-numeric: lining-nums proportional-nums;
     font-family: Inter, sans-serif;
     font-size: 1.2rem;
@@ -976,7 +976,7 @@ input[type='radio']:checked::after {
 }
 
 .opportunities__text {
-    color: #34344E;
+    color: #242433;
     font-variant-numeric: lining-nums proportional-nums;
     font-family: Inter, sans-serif;
     font-size: 1.2rem;
@@ -1007,7 +1007,7 @@ input[type='radio']:checked::after {
     padding: 13px 30px;
     border: 0;
     border-radius: 100px;
-    background-color: #34344E;
+    background-color: #242433;
     display: block;
     width: 145px;
     height: 17px;
@@ -1081,14 +1081,14 @@ input[type='radio']:checked::after {
 }
 
 .organization__tech {
-    color: #34344E;
+    color: #242433;
     padding-left: 57px;
 
 
 }
 
 .organization__text {
-    color: #34344E;
+    color: #242433;
     font-variant-numeric: lining-nums proportional-nums;
     font-family: Inter, sans-serif;
     font-size: 1.2rem;
@@ -1140,7 +1140,7 @@ input[type='radio']:checked::after {
 }
 
 .mp-questions__questions-title{
-    color: #34344E;
+    color: #242433;
     font-family: Steelfish,sans-serif;
     font-size: 3rem;
     font-style: normal;
@@ -1153,7 +1153,7 @@ input[type='radio']:checked::after {
 }
 
 .mp-questions__answer{
-    color:  #34344E;
+    color:  #242433;
     font-family: Inter,sans-serif;
     font-size: 1.2rem;
     font-style: normal;
@@ -1185,7 +1185,7 @@ input[type='radio']:checked::after {
     }
 
 .studio-contacts__title--right{
-    color: #34344E;
+    color: #242433;
     font-family: Steelfish,sans-serif;
     font-size: 4rem;
     font-style: normal;
@@ -1233,7 +1233,7 @@ input[type='radio']:checked::after {
 }
 
 .mail__text{
-    color: #34344E;
+    color: #242433;
     font-family: Inter,sans-serif;
     font-size: 1.2rem;
     font-style: normal;
@@ -1320,7 +1320,7 @@ input[type='radio']:checked::after {
 
 .time-text{
     display: block;
-    color: #34344E;
+    color: #242433;
     font-family: Inter,sans-serif;
     font-size: 1.2rem;
     font-style: normal;
@@ -1360,7 +1360,7 @@ input[type='radio']:checked::after {
 }
 
 .studio-contacts__address-text{
-    color: #34344E;
+    color: #242433;
     font-family: Inter,sans-serif;
     font-size: 1.2rem;
     font-style: normal;
@@ -1436,7 +1436,7 @@ input[type='radio']:checked::after {
 }
 
 .alink__text {
-    color: #ffeb32;
+    color: #ff856a;
     font-size: 1.2rem;
     font-family: Inter, sans-serif;
     font-weight: 400;
@@ -1448,7 +1448,7 @@ input[type='radio']:checked::after {
 
 .probable-price__list {
     background-color: white;
-    color: #34344E;
+    color: #242433;
     font-size: 1.2rem;
     font-family: Inter, sans-serif;
     font-weight: 400;
@@ -1464,7 +1464,7 @@ input[type='radio']:checked::after {
 .organization,
 .studio-contacts,
 .mp-questions {
-    background-color: #ffeb32;
+    background-color: #ff856a;
 
 
 }
@@ -1478,7 +1478,7 @@ input[type='radio']:checked::after {
 }
 
 .link__text2 {
-    background-color: #34344E;
+    background-color: #242433;
     color: white;
     font-size: 1.2rem;
     font-family: Inter, sans-serif;
@@ -1491,7 +1491,7 @@ input[type='radio']:checked::after {
 .test-drive__color-title,
 .organization__tech,
 .studio-contacts__color-title {
-    color: #34344E
+    color: #242433
 }
 
 .test-drive {
@@ -1499,7 +1499,7 @@ input[type='radio']:checked::after {
 }
 
 footer {
-    background-color: #34344E;
+    background-color: #242433;
 }
 
 .footer-link__mail,
@@ -1511,12 +1511,12 @@ footer {
 
 .button {
     color: #ECEEF8;
-    background-color: #34344E;
+    background-color: #242433;
     border: 0;
 }
 
 .text__developer {
-    color: #ffeb32
+    color: #ff856a
 }
 
 .hero__wrapper,
@@ -1668,7 +1668,7 @@ header {
 .grid{
     display: block;
     text-decoration: none;
-    color: whitesmoke;
+    color: white;
 }
 @media screen and (min-width:768px){
     
