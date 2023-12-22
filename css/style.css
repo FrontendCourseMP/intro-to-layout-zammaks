@@ -100,7 +100,7 @@
 
 :root {
     --first_color: #242433;
-    --second-color: #ff856a;
+    --second-color: #fd6948e0;
     --third-color: #ffffff;
     font-size: 62.5%
 }
@@ -138,7 +138,7 @@ button:active{
 label:active{
     transform: scale(1.2);
     transition: transform 1s;
-    background-color: #ff856a;
+    background-color: #fd6948e0;
     cursor: pointer;
 }
 a:focus,
@@ -256,7 +256,7 @@ html{
 .hero__link {
     display: block;
     border-radius: 100px;
-    background-color: #ff856a;
+    background-color: #fd6948e0;
     width: 260px;
     padding: 13px 30px;
     text-decoration: none;
@@ -304,7 +304,7 @@ html{
     text-transform: uppercase;
     line-height: 1.4;
     word-wrap: break-word;
-    background-color: #ff856a;
+    background-color: #fd6948e0;
     text-align: center;
 
 }
@@ -444,7 +444,7 @@ ul {
 
 .studio-card__link {
     display: block;
-    color: #ff856a;
+    color: #fd6948e0;
     text-align: right;
     font-variant-numeric: lining-nums proportional-nums;
     font-family: Inter, sans-serif;
@@ -540,7 +540,7 @@ ul {
 }
 
 .studio-zone--addition {
-    background-color: #ff856a;
+    background-color: #fd6948e0;
 }
 
 .studio-zone__title--addition {
@@ -762,7 +762,7 @@ input[type='radio']::before {
     height: 20px;
     border-radius: 50%;
     background-color: #FFF;
-    border: 1.75px solid #ff856a;
+    border: 1.75px solid #fd6948e0;
 }
 
 input[type='radio']:checked::after {
@@ -773,7 +773,7 @@ input[type='radio']:checked::after {
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    background-color: #ff856a;
+    background-color: #fd6948e0;
 }
 
 .form__answer {
@@ -794,7 +794,7 @@ input[type='radio']:checked::after {
     letter-spacing: -0.24px;
     text-transform: uppercase;
     margin: 20px;
-    background-color: #ff856a;
+    background-color: #fd6948e0;
     text-decoration: none;
 }
 
@@ -1436,7 +1436,7 @@ input[type='radio']:checked::after {
 }
 
 .alink__text {
-    color: #ff856a;
+    color: #fd6948e0;
     font-size: 1.2rem;
     font-family: Inter, sans-serif;
     font-weight: 400;
@@ -1464,7 +1464,7 @@ input[type='radio']:checked::after {
 .organization,
 .studio-contacts,
 .mp-questions {
-    background-color: #ff856a;
+    background-color: #fd6948e0;
 
 
 }
@@ -1516,7 +1516,7 @@ footer {
 }
 
 .text__developer {
-    color: #ff856a
+    color: #fd6948e0
 }
 
 .hero__wrapper,
