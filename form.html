@@ -12,7 +12,7 @@
 
 <body>
     <header class="header">
-        <a href="" class="header__logo logo">
+        <a href="./index.html" class="header__logo logo">
             <img src="img/point.svg" alt="logo" class="logo__img">
             <span class="logo__text">
                 TOCHKA
@@ -42,8 +42,8 @@
             <form action="//httpbin.org/post" method="post" class="form">
                 <fieldset class="form__fieldset--first first">
                     <legend class="first__legend">Личная информация</legend>
-                    <label><input type="text" name="people-name" placeholder="Иван" required><span>Имя *</span></label>  
-                    <label><input type="date" name="bithday" required><span>Дата рождения *</span></label>   
+                    <label><input type="text" name="people-name" placeholder="Иван" required><span>Имя *</span></label>
+                    <label><input type="date" name="bithday" required><span>Дата рождения *</span></label>
                     <label>
                         <select name="sex">
                             <option value="M" selected>М</option>
@@ -54,8 +54,9 @@
                 </fieldset>
                 <fieldset class="form__fieldset--second second">
                     <legend class="second__legend">Контактые данные</legend>
-                    <label><input type="email" name="email" placeholder="ivanov1980@mail.ru" required><span>E-mail *</span></label>  
-                    <label><input type="password" name="password" required><span>Пароль *</span></label> 
+                    <label><input type="email" name="email" placeholder="ivanov1980@mail.ru" required><span>E-mail
+                            *</span></label>
+                    <label><input type="password" name="password" required><span>Пароль *</span></label>
                     <label><input type="tel" name="phone" placeholder="+7 (777) 777-77-77"><span>Телефон</span></label>
                     <label>
                         <select name="time">
@@ -76,30 +77,51 @@
                 <fieldset>
                     <dl class="definition__list">
                         <dt class="term">Псевдоэлементы</dt>
-                        <dd class="description">элементы, которых не существует в HTML-разметке. Они создаются и позиционируются исключительно при помощи CSS. Чаще всего используются для создания различных декоративных элементов (которые не несут содержательного смысла).</dd>
+                        <dd class="description">элементы, которых не существует в HTML-разметке. Они создаются и
+                            позиционируются исключительно при помощи CSS. Чаще всего используются для создания различных
+                            декоративных элементов (которые не несут содержательного смысла).</dd>
                         <dt class="term">Псевдоклассы</dt>
-                        <dd class="description">особые виды селектора, которые уточняют тип или состояние. Обычно это какой-то качественный признак: реакция на наведение курсора, порядок следования и другие.</dd>
+                        <dd class="description">особые виды селектора, которые уточняют тип или состояние. Обычно это
+                            какой-то качественный признак: реакция на наведение курсора, порядок следования и другие.
+                        </dd>
                     </dl>
                     <span class="elem__title">Псевдоэлементы</span>
-                    <label class="radio-button"><input type="checkbox" name="elem" checked="checked"><span class="radio-text" >::selection</span></label> 
-                    <label class="radio-button"><input type="checkbox" name="elem" checked="checked"><span class="radio-text">::first-letter</span></label> 
-                    <label class="radio-button"><input type="checkbox" name="elem" ><span class="radio-text">::first-line</span></label> 
-                    <label class="radio-button"><input type="checkbox" name="elem" ><span class="radio-text">::marker</span></label>
-                    <label class="radio-button"><input type="checkbox" name="elem" checked="checked"><span class="radio-text">::before</span></label> 
-                    <label class="radio-button"><input type="checkbox" name="elem" ><span class="radio-text">::after</span></label> 
-                    <label class="radio-button"><input type="checkbox" name="elem" checked="checked"><span class="radio-text">::placeholder</span></label> 
+                    <label class="radio-button"><input type="checkbox" name="elem" checked="checked"><span
+                            class="radio-text">::selection</span></label>
+                    <label class="radio-button"><input type="checkbox" name="elem" checked="checked"><span
+                            class="radio-text">::first-letter</span></label>
+                    <label class="radio-button"><input type="checkbox" name="elem"><span
+                            class="radio-text">::first-line</span></label>
+                    <label class="radio-button"><input type="checkbox" name="elem"><span
+                            class="radio-text">::marker</span></label>
+                    <label class="radio-button"><input type="checkbox" name="elem" checked="checked"><span
+                            class="radio-text">::before</span></label>
+                    <label class="radio-button"><input type="checkbox" name="elem"><span
+                            class="radio-text">::after</span></label>
+                    <label class="radio-button"><input type="checkbox" name="elem" checked="checked"><span
+                            class="radio-text">::placeholder</span></label>
                     <span class="elem__title">Псевдоклассы</span>
-                    <label class="radio-button"><input type="checkbox" name="elem" checked="checked"><span class="radio-text" >:hover</span></label> 
-                    <label class="radio-button"><input type="checkbox" name="elem" checked="checked"><span class="radio-text">:active</span></label> 
-                    <label class="radio-button"><input type="checkbox" name="elem" ><span class="radio-text">:disable</span></label> 
-                    <label class="radio-button"><input type="checkbox" name="elem" ><span class="radio-text">:visited</span></label>
-                    <label class="radio-button"><input type="checkbox" name="elem" checked="checked"><span class="radio-text">:focus</span></label> 
-                    <label class="radio-button"><input type="checkbox" name="elem" ><span class="radio-text">:enabled</span></label> 
-                    <label class="radio-button"><input type="checkbox" name="elem" ><span class="radio-text">:placeholder-shown</span></label> 
+                    <label class="radio-button"><input type="checkbox" name="elem" checked="checked"><span
+                            class="radio-text">:hover</span></label>
+                    <label class="radio-button"><input type="checkbox" name="elem" checked="checked"><span
+                            class="radio-text">:active</span></label>
+                    <label class="radio-button"><input type="checkbox" name="elem"><span
+                            class="radio-text">:disable</span></label>
+                    <label class="radio-button"><input type="checkbox" name="elem"><span
+                            class="radio-text">:visited</span></label>
+                    <label class="radio-button"><input type="checkbox" name="elem" checked="checked"><span
+                            class="radio-text">:focus</span></label>
+                    <label class="radio-button"><input type="checkbox" name="elem"><span
+                            class="radio-text">:enabled</span></label>
+                    <label class="radio-button"><input type="checkbox" name="elem"><span
+                            class="radio-text">:placeholder-shown</span></label>
                 </fieldset>
-                </fieldset>
-                <button type="submit" class="button__send">Отправить</button>
-                <button type="reset" class="button__reset">Очистить</button>
+                <button type="submit" class="button__send">
+                    Отправить
+                </button>
+                <button type="reset" class="button__reset">
+                    Очистить
+                </button>
             </form>
         </div>
     </main>

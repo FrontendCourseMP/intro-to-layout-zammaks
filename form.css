@@ -100,152 +100,171 @@
     --second-color: #F49C89;
     --third-color: #ECEEF8;
     font-size: 62.5%
-
 }
+
 .burger {
     margin: 0;
     text-align: right;
 
 }
-.form__wrapper{
+
+.form__wrapper {
     margin: 10px 10px;
 }
 
-.form__title{
+.form__title {
     color: #ECEEF8;
     font-size: 7rem;
-    font-family: 'Steelfish',sans-serif;
+    font-family: 'Steelfish', sans-serif;
     font-weight: 700;
     line-height: 1.1;
     text-align: center;
 }
-form{
+
+form {
     max-width: 40%;
     margin: 15px auto;
 }
-fieldset{
+
+fieldset {
     border: 10px solid #F49C89;
     border-radius: 40px;
     min-width: 300px;
     min-height: 200px;
 }
-legend{
+
+legend {
     text-align: center;
     color: #ECEEF8;
     font-size: 4rem;
-    font-family: 'Steelfish',sans-serif;
+    font-family: 'Steelfish', sans-serif;
     font-weight: 400;
     line-height: 1.5;
 }
-label{
+
+label {
     text-align: center;
     color: #ECEEF8;
     font-size: 1.5rem;
-    font-family: "Inter",sans-serif;
+    font-family: "Inter", sans-serif;
     font-weight: 400;
     line-height: 1.1;
     display: flex;
     flex-direction: column-reverse;
 }
-input{
+
+input {
     display: block;
-    margin:5px auto;
+    margin: 5px auto;
     min-width: 250px;
     font-size: 1.75rem;
     line-height: 1.1;
-    background-color:whitesmoke;
+    background-color: whitesmoke;
     border-radius: 10px;
     border: 2px solid whitesmoke;
 }
-option{
+
+option {
     font-size: 1.5rem;
 }
-button{
+
+button {
     display: block;
     margin: 10px auto;
     min-width: 250px;
     min-height: 30px;
-    border: 2px solid whitesmoke ;
+    border: 2px solid whitesmoke;
     border-radius: 10px;
     background-color: #F49C89;
     color: #ECEEF8;
     font-size: 3rem;
-    font-family: 'Inter',sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
     text-align: center;
 
 
 }
-.footer__logo{
+
+.footer__logo {
     max-width: 200px;
     transform: rotate(30deg) scale(1.5) skewX(-35deg) skewY(-15deg);
 }
-input:focus + span {
+
+input:focus+span {
     transform: scale(1.2);
     color: var(--first_color);
     background-color: #F49C89;
 }
-select:focus + span {
+
+select:focus+span {
     transform: scale(1.2);
     color: var(--first_color);
     background-color: #F49C89;
 }
-::placeholder{
-    color:rgb(40, 98, 115);
+
+::placeholder {
+    color: rgb(40, 98, 115);
 
 }
-:required{
+
+:required {
     border-width: 3px;
     background-color: #f49d89;
 }
+
 .term,
-.elem__title{
+.elem__title {
     color: #ECEEF8;
     font-size: 5rem;
-    font-family: 'Steelfish',sans-serif;
+    font-family: 'Steelfish', sans-serif;
     font-weight: 700;
     line-height: 1.5;
     padding: 10px;
 }
-.description{
+
+.description {
     color: #ECEEF8;
     font-size: 2rem;
-    font-family: 'Inter',sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
     line-height: 1.1;
     padding: 10px;
 }
 
-.description::before{
+.description::before {
     content: '🛈';
     padding: 5px;
 }
 
-.term::first-letter{
+.term::first-letter {
     font-size: 8rem;
     color: #F49C89;
 }
-input[type="checkbox"]{
+
+input[type="checkbox"] {
     margin: 10px;
     min-width: 30px;
     min-height: 30px;
 }
-.radio-button{
+
+.radio-button {
     display: flex;
     flex-direction: row;
     justify-content: left;
 
 }
-.radio-text{
+
+.radio-text {
     display: block;
     padding: 10px;
     margin: 0;
 
 }
-input:checked+span{
+
+input:checked+span {
     text-decoration: line-through;
 }
 
-.radio-button:nth-child(odd){
+.radio-button:nth-child(odd) {
     color: #F49C89;
 }
